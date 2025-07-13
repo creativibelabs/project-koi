@@ -38,10 +38,10 @@ export default function RootLayout({children}) {
               position: 'static',
             }}>
             <RipplesBackground />
-            {/* <Header /> */}
+            <Header />
             <div className="content-wrapper">{children}</div>
             {/* <ChatWrapper /> */}
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </body>

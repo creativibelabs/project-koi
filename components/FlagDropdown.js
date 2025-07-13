@@ -36,7 +36,7 @@ export default function FlagDropdown() {
   };
 
   return (
-    <div className="relative inline-block w-12 cursor-pointer">
+    <div className="flagImage cursor-pointer">
       {/* Selected Flag */}
       <div onClick={toggleDropdown}>
         <Image
@@ -44,13 +44,13 @@ export default function FlagDropdown() {
           alt={selected.name}
           width={48}
           height={32}
-          className="rounded shadow"
+          className="mainFlagImage"
         />
       </div>
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute mt-2 w-12 bg-white border rounded shadow z-10">
+        <div className="absolute mt-2 w-12 gradient-background border rounded shadow z-10">
           {flags
             .filter((flag) => flag.code !== selected.code)
             .map((flag) => (
