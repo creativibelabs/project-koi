@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 
 :root {
   --background: #ffffff;
@@ -22,5 +25,340 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(255 255 255 / 40%);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.hero-section a {
+  min-width: 139px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section .buttons-wrapper {
+  gap: 15px;
+}
+
+
+
+.content-section {
+    width: 55%;
+    border-radius: 17.32px;
+    padding: 15.16px 21.65px;
+}
+
+.gradient-background {
+  background-color: #ff000000; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#FFFFFF99, #9999994D);
+}
+
+.content-section h1 {
+  font-weight: 900;
+  color: #C3F8D9;
+  font-size: 51.97px;
+  line-height: 60px;
+}
+
+.content-section p {
+  margin-top: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 34.65px;
+  line-height: 40px;
+  width: 90%;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px
+}
+
+.buttons-wrapper a {
+  padding: 10px 20px;
+  background-color: #98C1A9;
+  border-radius: 100px;
+  color: white;
+  font-size: 19.49px;
+  font-weight: 700;
+  box-shadow: rgb(255 255 255 / 74%) 0px 10px 10px -10px;
+}
+
+.ServicesCardsWrapper {
+  margin-top: 100px;
+}
+
+.ServicesCardsHeading {
+  padding: 5px 18px;
+  border-radius: 16px;
+}
+
+.ServicesCardsHeading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ServicesCardsContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%
+}
+
+.ServicesCardsContent .service-card-wrap {
+  width: 32%;
+  border-radius: 16px;
+  border: 1px solid #FFFFFF66;
+  backdrop-filter: blur(15px);
+  margin-top: 2%;
+}
+
+.ServicesCardsContent img {
+  width: 204px;
+}
+
+.ServicesCardsContent .heading, .whyCHooseUsWrapper .heading {
+  font-size: 24px;    
+  color: #EDF5F4;
+  font-weight: 700;  
+}
+
+.ServicesCardsContent .description, .service-card-wrap .content-description {
+  font-size: 18px;    
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+
+.image-button-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.image-button-wrap a {
+  display: flex;
+  align-items: center;
+  width: 31%;
+  /* margin-left: -10px; */
+  justify-content: flex-end;
+}
+
+span.buuttonIcon {
+  width: 30%;
+}
+
+
+span.buuttonIcon svg {
+  width: 80px;
+}
+
+span.buttonText {
+  width: 37%;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+
+.whyCHooseUsWrapper {
+  margin-top: 100px;
+}
+
+.whyChooseUsHeading {
+  padding: 5px 18px;
+  border-radius: 16px;
+}
+
+.whyChooseUsHeading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.whyChooseUsCardContents {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid #FFFFFF66;
+  padding: 14px 16px;
+  margin-top: 2%;
+}
+
+.cardWrappers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%
+}
+
+.ImageWrapper img {
+  width: 100% !important;
+}
+
+.cardWrappers .service-card-wrap {
+  width: 32%;
+  border-radius: 16px;
+  border: 1px solid #FFFFFF66;
+  backdrop-filter: blur(15px);
+  margin-top: 2%;
+}
+
+.cardWrappers svg {
+  margin-left: -15px;
+}
+
+p.wcu-heading .heading-1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+p.wcu-heading .heading-2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ImageWrapper {
+    position: relative;
+}
+
+.cardsTags {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.cardsTags span.card-tag {
+    font-weight: 500;
+    background: white;
+    border-radius: 3px;
+    padding: 0px 8px;
+    color: #3F3F3F;
+    font-size: 13px;
+}
+
+.industriesServeMainWrapper {
+  margin-top: 100px;
+}
+
+.is-heading {
+  padding: 5px 18px;
+  border-radius: 16px;
+}
+
+.is-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.isContent {
+  /* display: flex; */
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid #FFFFFF66;
+  padding: 14px 16px;
+  margin-top: 2%;
+}
+
+.itemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%
+}
+
+.itemsWrapper ul {
+    width: 49%;
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.itemsWrapper ul li {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.industriesServeMainWrapper .buttons-wrapper {
+    justify-content: center;
+    gap: 5% !important;
+}
+
+a {
+  min-width: 240px;
+  text-align: center;
+}
+
+
+
+.StillThinkingMainWrapper {
+  margin-top: 100px;
+}
+
+.st-heading {
+  padding: 5px 18px;
+  border-radius: 16px;
+}
+
+.st-heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.stContent {
+  /* display: flex; */
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid #FFFFFF66;
+  padding: 14px 16px;
+  margin-top: 2%;
+}
+
+.stContent p.heading-1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.stContent p.content {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 94%;
+}
+
+.link-text {
+    color: #00FF38;
+}
+
+.stContent .buttons-wrapper {
+    justify-content: center;
+}
+
+.whyChooseUsCardContents a {
+  text-align: left;
+}
+
+.whyChooseUsCardContents .content-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }

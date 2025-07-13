@@ -1,103 +1,143 @@
 import Image from "next/image";
+import Link from 'next/link';
+import ServicesCards from '@/components/ServicesCards';
+import WhyChooseUsCard from '@/components/whyChooseUsCard';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="hero-section">
+        <div className="content-section gradient-background">
+          <h1>IT Solutions Tailored to Your Business</h1>
+          <p>From day-to-day support to long term strategy, we deliver cost efficient, flexible IT services designed to match your goals and specific way of working</p>
+          <div className="buttons-wrapper">
+            <Link href="#">Call us</Link>
+            <Link href="#">Check Services</Link>
+            <Link href="#">Try Demo</Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="image-section">
+          <Image src='/images/hero-image.png' width={516} height={444} alt="Hero Image"></Image>
+        </div>
+      </div>
+      <div className="ServicesCardsWrapper">
+        <div className="ServicesCardsHeading gradient-background"><h2>Our Services</h2></div>
+        <div className="ServicesCardsContent">
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="Custom App Development"
+            description="Tailored software, mobile app and web applications turning your ideas into powerful digital solutions"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="Web Development"
+            description="Responsive, SEO-friendly websites - from sleek portfolios to full-featured e-commerce stores - showcase your brand and drive real results."
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="Cloud Migration & Storage"
+            description="Seamlessly migrate to the cloud – boosting performance, security, and scalability."
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="AI Powered Solutions"
+            description="Leverage AI and machine learning to streamline operations, personalize experiences, and drive data-backed decisions"
+          />
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="Managed IT Services & Consulting"
+            description="Enterprise-grade IT management and strategic consulting to optimize operations"
+          />
+          <ServicesCards 
+            imageUrl="/images/service-card-image.png"
+            buttonText="Learn More"
+            link="#"
+            heading="Digital Marketing"
+            description="From clicks to customers—grow fast with smart, effective digital marketing"
+          />
+        </div>
+      </div>
+
+      <div className="whyCHooseUsWrapper">
+        <div className="whyChooseUsHeading gradient-background"><h2>Why Choose Us?</h2></div>
+        <div className="whyChooseUsCardContents">
+          <p className="wcu-heading"><span className="heading-1">Smart IT Solutions with Real Business Benefits</span><br /><span className="heading-2">We don’t just provide services – we deliver results. Here’s what you can expect when you partner with us.</span></p>
+          <div className="cardWrappers">
+            <WhyChooseUsCard 
+              imageUrl="/images/why-choose-1.png"
+              link="#"
+              title="End-to-End Expertise"
+              tags={['3D', 'AR/VR/MR', '2D']}
+              description="We off complete digital solutions – from strategy to launch – so you get everything under one roof."
+            />
+            <WhyChooseUsCard 
+              imageUrl="/images/why-choose-2.png"
+              link="#"
+              title="Performance-Focused Solutions"
+              tags={['3D', 'AR/VR/MR', '2D']}
+              description="We focus on measurable outcomes – we deliver solutions that drive real business value."
+            />
+            <WhyChooseUsCard 
+              imageUrl="/images/why-choose-3.png"
+              link="#"
+              title="Reliable Support & Partnership"
+              tags={['3D', 'AR/VR/MR', '2D']}
+              description="We don’t just delivery projects – we build long-term relationships with proactive support and honest communication."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="industriesServeMainWrapper">
+        <div className="is-heading gradient-background"><h2>Industries We Serve</h2></div>
+        <div className="isContent">
+          <div className="itemsWrapper">
+            <ul>
+              <li>Manufacture</li>
+              <li>Imp / Exp</li>
+              <li>Logistics</li>
+              <li>Retail</li>
+              <li>Professional Services</li>
+              <li>Finance</li>
+            </ul>
+            <ul>
+              <li>Schools</li>
+              <li>Health Service</li>
+              <li>Food Service</li>
+              <li>Renovation</li>
+              <li>Freelance</li>
+              <li>And More...</li>
+            </ul>
+          </div>
+          <div className="buttons-wrapper">
+            <Link href="#">See Case Studies</Link>
+            <Link href="#">Explore How It Works</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="StillThinkingMainWrapper">
+        <div className="st-heading gradient-background"><h2>Still Thinking?</h2></div>
+        <div className="stContent">
+          <p className="heading-1">No problem! Explore our <Link href="#" className="link-text">Interactive Demo</Link></p>
+          <p className="content">
+            Dive into real scenarios and see firsthand how our IT solutions work for your business. Whether you're testing cloud integration, exploring security features, or just curious, it's an easy and fun way to get familiar with what we offer—no commitment, just exploration.
+          </p>
+          <div className="buttons-wrapper">
+            <Link href="#">Try the Demo</Link>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
