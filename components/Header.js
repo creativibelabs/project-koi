@@ -38,14 +38,14 @@ export default function Header() {
           </nav>
         </div>
         <div className='searchLangWrapper'>
-          <div className='mobile-hide searchWrapper'>
+          {/* <div className='mobile-hide searchWrapper'>
             <Search className="searchBar" />
             <input
               type="text"
               placeholder="Search..."
               className="searchInput"
             />
-          </div>
+          </div> */}
           <div className='LangWrapper'>
             <FlagDropdown />
           </div>

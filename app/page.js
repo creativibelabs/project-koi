@@ -109,8 +109,6 @@ export default function Home() {
               <li>Retail</li>
               <li>Professional Services</li>
               <li>Finance</li>
-            </ul>
-            <ul>
               <li>Schools</li>
               <li>Health Service</li>
               <li>Food Service</li>

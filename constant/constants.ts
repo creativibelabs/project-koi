@@ -2,11 +2,11 @@
 
 export const navLinks = [
   { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services' },
+  { name: 'Resources', href: '/resources' },
   { name: 'Demo', href: '/demo' },
-  { name: 'Services/Products', href: '/services-products' },
-  { name: 'Blogs', href: '/blogs' },
   { name: 'About us', href: '/about-us' },
-  { name: 'FAQs', href: '/faqs' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export const footerLinks1 = [
