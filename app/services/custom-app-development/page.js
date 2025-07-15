@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function CustomAppDevelopment() {
     return(
-        <>
+        <div>
             <Breadcrumb />
             <div className='servicePageWrapper'>
                 <div className='sideBarWrapper'>
@@ -71,6 +71,6 @@ export default function CustomAppDevelopment() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

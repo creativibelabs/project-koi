@@ -17,7 +17,7 @@ export default function CloudMigrationServices() {
         { name: 'Cloud Storage', content: <CloudStorage />, icon: '/icons/cloud.png' },
     ];
     return (
-        <>
+        <div className='pageWrapper'>
             <Breadcrumb />
             <div className='servicePageWrapper'>
                 <div className='sideBarWrapper'>
@@ -49,6 +49,6 @@ export default function CloudMigrationServices() {
                     )}
                 </div>
             </div>
-        </>
+        </div>
     );
 }

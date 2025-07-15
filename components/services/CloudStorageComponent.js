@@ -4,7 +4,7 @@ import FeatureHighlights from '@/components/FeatureHighlights';
 
 export default function CloudStorage() {
     return (
-        <>
+        <div>
             <div className="industriesServeMainWrapper webDev cloudStorage">
                 <div className="is-heading gradient-background"><h3>Introduction</h3></div>
                 <div className="isContent">
@@ -75,6 +75,6 @@ export default function CloudStorage() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

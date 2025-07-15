@@ -4,7 +4,7 @@ import FeatureHighlights from '@/components/FeatureHighlights';
 
 export default function CloudMigration() {
     return (
-        <>
+        <div>
             <div className="industriesServeMainWrapper webDev">
                 <div className="is-heading gradient-background"><h3>Cloud Migration Made Simple, Secure, and Scalable</h3></div>
                 <div className="isContent">
@@ -47,28 +47,28 @@ export default function CloudMigration() {
                 <div className="is-heading gradient-background"><h3>Migration Pathway</h3></div>
                 <div className="isContentTimeLine">
                     <div className="itemsWrapper">
-                        <div class="timeline">
+                        <div className="timeline">
                             <div className='circle circle-top'></div>
-                            <div class="container left">
-                                <div class="timeline-content">
+                            <div className="container left">
+                                <div className="timeline-content">
                                     <h2>Assessment & Planning</h2>
                                     <p>Conduct a thorough analysis of your current infrastructure and define migration objectives.</p>
                                 </div>
                             </div>
-                            <div class="container right">
-                                <div class="timeline-content">
+                            <div className="container right">
+                                <div className="timeline-content">
                                     <h2>Architecture & Strategy</h2>
                                     <p>Develop a customized cloud architecture that aligns with your business goals and compliance requirements.</p>
                                 </div>
                             </div>
-                            <div class="container left">
-                                <div class="timeline-content">
+                            <div className="container left">
+                                <div className="timeline-content">
                                     <h2>Migration Execution</h2>
                                     <p>Implement migration with minimal disruptions, ensuring data integrity and security.</p>
                                 </div>
                             </div>
-                            <div class="container right last">
-                                <div class="timeline-content">
+                            <div className="container right last">
+                                <div className="timeline-content">
                                     <h2>Optimization & Ongoing Support</h2>
                                     <p>Provide post migration testing, validation, optimization and ongoing support to maximize the benefits of your cloud environment.</p>
                                 </div>
@@ -134,6 +134,6 @@ export default function CloudMigration() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

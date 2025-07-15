@@ -110,7 +110,7 @@ header {
 .buttons-wrapper a,
 .button {
   padding: 10px 20px;
-  background-color: rgb(152 193 169 / 40%);
+  background-color: #ffffff52;
   border-radius: 100px;
   color: white;
   font-size: 19.49px;
@@ -1139,5 +1139,23 @@ a.sidebar-menu.active {
 
 .whyCHooseUsWrapper.industriesServeMainWrapper p {
   font-size: 18px;
+}
+
+p.subHeadings {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.industriesServeMainWrapper.ai-cta.letsBuildToghether.featuresHighlight.cmsWork
+  .isContent {
+  padding-top: 14px;
+}
+
+.ai-cta .heading {
+  font-size: 20px !important;
+}
+
+.animatedSvg {
+  margin: 0 auto;
 }
 /* Services Page CSS End */

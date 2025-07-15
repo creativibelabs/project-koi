@@ -1,11 +1,15 @@
+'use client';
+
 import Breadcrumb from '@/components/Breadcrumb';
 import FeatureHighlights from '@/components/FeatureHighlights';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
+import Lottie from "lottie-react";
+import animationData from "../../../public/lottie/rising-chart.json";
 
-export default function CustomWebsiteDevelopment() {
-    return(
+export default function DigitalMarketingServices() {
+    return (
         <div>
             <Breadcrumb />
             <div className='servicePageWrapper'>
@@ -14,22 +18,23 @@ export default function CustomWebsiteDevelopment() {
                 </div>
                 <div className='serviceContentWrapper'>
                     <div className="industriesServeMainWrapper webDev">
-                        <div className="is-heading gradient-background"><h3>Custom Websites That Do More Than Look Good</h3></div>
+                        <div className="is-heading gradient-background"><h3>Marketing That Moves the Needle</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
                                 <p>
-                                    Your website is more than a digital brochure – it’s your band’s first impression, your
-                                    24/7 sales team, and a key driver of trust. We build responsive high-performance
-                                    websites that are optimized for search engines and crafted to convert visitors into
-                                    customers. 
+                                    Data-driven digital strategies that turn browsers into buyers, clicks into conversions,
+                                    and awareness into measurable ROI (Return On Investment)
                                 </p>
                                 <br />
                                 <p>
-                                    Whether you're launching a product, building a brand presence, or scaling your
-                                    business online, we deliver web experiences that blend design excellence with
-                                    technical precision.
+                                    We help businesses attract the right audience, convert more leads, and grow
+                                    revenue through strategic, data-driven digital marketing. Whether you're launching a
+                                    product, scaling a brand, or fixing underperforming campaigns — we’re your growth
+                                    partner
                                 </p>
-                                <Image src="/images/web-dev-image1.png" width={6000} height={6000}/>
+                                <div className='animatedSvg'>
+                                    <Lottie animationData={animationData} loop={true} autoplay={true} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,22 +42,22 @@ export default function CustomWebsiteDevelopment() {
                         <div className="is-heading gradient-background"><h3>What Sets Our Websites Apart</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/search-engine.png"
                                     title="Performance and Search Engine Optimization"
                                     description="Built from the ground up for performance and visibility — every line of code matters."
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/cms.png"
                                     title="Content Management System Integration"
                                     description="Take full control of your content. From WordPress to headless CMS platforms like Sanity and Contentful, manage your content your way."
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/responsive.png"
                                     title="Fully Responsive Design Across Devices"
                                     description="Flawless display on all screen sizes – from desktop to mobile – ensuring a polished, professional experience everywhere."
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/website.png"
                                     title="Conversion-Focused UX"
                                     description="We blend form and function to guide visitors toward action — whether that’s buying, booking, or reaching out."
@@ -64,22 +69,22 @@ export default function CustomWebsiteDevelopment() {
                         <div className="is-heading gradient-background"><h3>Types of Websites We Build</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/bullhorn.png"
                                     title="Marketing & Brand Websites "
                                     description="Your online presence, built to impress and convert."
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/monitor.png"
                                     title="Corporate Portals & Intranets"
                                     description="Secure, role-based platforms for Internal communications, knowledge sharing, and operations"
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/ecommerce.png"
                                     title="E-commerce Platforms"
                                     description="Seamlessly Integrated stores that handle payments, inventory, customer experience and analytics at ease"
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/ladning-page.png"
                                     title="Landing Pages & Microsites"
                                     description="Agile web experiences for campaigns, product launches and lead capture"
@@ -91,42 +96,42 @@ export default function CustomWebsiteDevelopment() {
                         <div className="is-heading gradient-background"><h3>CMS & Technology Options</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/wordpress.png"
                                     title="WordPress"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/webflow.png"
                                     title="Webflow"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/sanity.png"
                                     title="Sanity"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/strapi.png"
                                     title="Strapi"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/contentful.png"
                                     title="Contentful"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/jamstack.png"
                                     title="Jamstack"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/shopify.png"
                                     title="Shopify"
                                     description=""
                                 />
-                                <FeatureHighlights 
+                                <FeatureHighlights
                                     imageUrl="/icons/nextjs.png"
                                     title="Next.js"
                                     description=""
