@@ -26,9 +26,8 @@ export default function RootLayout({children}) {
       </head>
       <body className={publicSans.variable}>
         <div id="root">
-          <div className="transition-opacity duration-700 opacity-100"
+          <div className="transition-opacity duration-700 opacity-100 background-image"
             style={{
-              backgroundImage: 'url("images/bg.webp")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               width: '100%',
@@ -37,7 +36,7 @@ export default function RootLayout({children}) {
               overflowY: 'auto',
               position: 'static',
             }}>
-            <RipplesBackground />
+            {/* <RipplesBackground /> */}
             <Header />
             <div className="content-wrapper">{children}</div>
             {/* <ChatWrapper /> */}

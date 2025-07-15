@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         <div className='menuWrapper mobile-hide'>
           <nav className="navBar">
-            {navLinks.map((link) => (
+            {/* {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -33,6 +33,35 @@ export default function Header() {
                 }`}
               >
                 {link.name}
+              </Link>
+            ))} */}
+
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`relative ${
+                  isActive(link.href)
+                    ? 'nav-menu active'
+                    : 'nav-menu'
+                }`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.name}
+                {link.subMenu && (
+                  <div className="absolute sub-menu" style={{opacity: '0'}} >
+                    {link.subMenu.map((subLink) => (
+                      <Link
+                        key={link.href + subLink.href}
+                        href={`${link.href}/${subLink.href.replace(/^\//, '')}`}
+                        className="nav-menu"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {subLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </Link>
             ))}
           </nav>

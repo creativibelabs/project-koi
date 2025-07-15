@@ -23,7 +23,7 @@ export default function ServicesCards({
         <Link href={link}>
           <span className="buttonText">{buttonText}</span>
           <span className="buuttonIcon">
-            <svg height="42.9" xmlns="http://www.w3.org/2000/svg" class="arrow">
+            <svg height="42.9" xmlns="http://www.w3.org/2000/svg" className="arrow">
               <g>
                 <path d="M56.7 0.565918H31.0811L48.548 22.0169L31.0811 43.4689H56.7L74.1671 22.0169L56.7 0.565918Z" fill="#00FF38"></path>
                 <path d="M24.1481 0.565918H15.7861L33.2541 22.0169L15.7861 43.4689H24.1481L41.6161 22.0169L24.1481 0.565918Z" fill="#00FF38"></path>
