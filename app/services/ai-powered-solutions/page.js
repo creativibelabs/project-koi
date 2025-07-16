@@ -88,37 +88,37 @@ export default function AiPoweredSolutions() {
 
                             <div className="itemsWrapper">
                                 <FeatureHighlights
-                                    imageUrl="/icons/wordpress.png"
+                                    imageUrl="/icons/tensorflow.png"
                                     title="TensorFlow"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/webflow.png"
+                                    imageUrl="/icons/pytorch.png"
                                     title="PyTorch"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/sanity.png"
+                                    imageUrl="/icons/opencv.png"
                                     title="OpenCV"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/strapi.png"
+                                    imageUrl="/icons/face.png"
                                     title="Hugging Face"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/contentful.png"
+                                    imageUrl="/icons/aws.png"
                                     title="AWS SageMaker"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/jamstack.png"
+                                    imageUrl="/icons/vertex.png"
                                     title="Google Vertex AI"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/shopify.png"
+                                    imageUrl="/icons/azure.png"
                                     title="Microsoft Azure AI"
                                     description=""
                                 />

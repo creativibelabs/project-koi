@@ -39,62 +39,33 @@ export default function DigitalMarketingServices() {
                         </div>
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight">
-                        <div className="is-heading gradient-background"><h3>What Sets Our Websites Apart</h3></div>
+                        <div className="is-heading gradient-background"><h3>Service types</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl="/icons/search-engine.png"
-                                    title="Performance and Search Engine Optimization"
-                                    description="Built from the ground up for performance and visibility — every line of code matters."
+                                    title="SEO & Content Strategy"
+                                    description="Be Found. Be Chosen. Be Trusted."
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/cms.png"
-                                    title="Content Management System Integration"
-                                    description="Take full control of your content. From WordPress to headless CMS platforms like Sanity and Contentful, manage your content your way."
+                                    imageUrl="/icons/email-marketing.png"
+                                    title="Email Marketing & Automation"
+                                    description="Automated campaigns that drive repeat business"
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/responsive.png"
-                                    title="Fully Responsive Design Across Devices"
-                                    description="Flawless display on all screen sizes – from desktop to mobile – ensuring a polished, professional experience everywhere."
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/website.png"
-                                    title="Conversion-Focused UX"
-                                    description="We blend form and function to guide visitors toward action — whether that’s buying, booking, or reaching out."
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="industriesServeMainWrapper featuresHighlight">
-                        <div className="is-heading gradient-background"><h3>Types of Websites We Build</h3></div>
-                        <div className="isContent">
-                            <div className="itemsWrapper">
-                                <FeatureHighlights
-                                    imageUrl="/icons/bullhorn.png"
-                                    title="Marketing & Brand Websites "
-                                    description="Your online presence, built to impress and convert."
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/monitor.png"
-                                    title="Corporate Portals & Intranets"
-                                    description="Secure, role-based platforms for Internal communications, knowledge sharing, and operations"
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/ecommerce.png"
-                                    title="E-commerce Platforms"
-                                    description="Seamlessly Integrated stores that handle payments, inventory, customer experience and analytics at ease"
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/ladning-page.png"
-                                    title="Landing Pages & Microsites"
-                                    description="Agile web experiences for campaigns, product launches and lead capture"
+                                    imageUrl="/icons/pay-per-click.png"
+                                    title="Paid Media (PPC & Display Ads)"
+                                    description="Maximize ROI with hyper-targeted ad campaigns across major platforms."
                                 />
                             </div>
                         </div>
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight cmsWork">
-                        <div className="is-heading gradient-background"><h3>CMS & Technology Options</h3></div>
+                        <div className="is-heading gradient-background"><h3>Funnel-Based Solutions</h3></div>
                         <div className="isContent">
+                            <div className="itemsWrapper">
+                                Flow Chart
+                            </div>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl="/icons/wordpress.png"
@@ -140,14 +111,15 @@ export default function DigitalMarketingServices() {
                         </div>
                     </div>
                     <div className="industriesServeMainWrapper letsBuildToghether">
-                        <div className="is-heading gradient-background"><h3>Your Project Start Here</h3></div>
+                        <div className="is-heading gradient-background"><h3>Let’s Build a Digital Marketing Strategy That Works</h3></div>
                         <div className="isContent">
                             <p className="content">
-                                Whether you're starting from scratch or rebuilding with purpose, we’ll help you create a site that not only looks great — it performs where it counts.
+                                We’ll help you generate qualified leads, boost your brand, and track every click.
+                                Whether you need a full-service marketing team or campaign-specific support, we’ll
+                                craft a strategy built around results.
                             </p>
                             <div className="buttons-wrapper">
-                                <Link href="#">Request a Free Website Audit</Link>
-                                <Link href="#">Request a Quote</Link>
+                                <Link href="#">Talk to a Strategist</Link>
                             </div>
                         </div>
                     </div>
