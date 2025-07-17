@@ -1145,7 +1145,38 @@ p.subHeadings {
 }
 
 .isContent.led-text {
-    padding: 0;
-    border: none;
+  padding: 0;
+  border: none;
+}
+
+.duoColumns {
+  display: flex;
+}
+
+.headingWrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.headingWrapper h3 {
+  font-size: 24px;
+}
+
+.contentWrapper h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.duoColumns .service-card-wrap {
+  border-radius: 20px;
+}
+
+.duoColumns .heading {
+  font-size: 17px !important;
+}
+
+.duoColumns .description {
+  font-size: 14px !important;
+  color: white;
 }
 /* Services Page CSS End */

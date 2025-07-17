@@ -27,30 +27,65 @@ export default function managedItServices() {
                             </div>
                         </div>
                     </div>
-                    <div className="industriesServeMainWrapper featuresHighlight">
+                    <div className="industriesServeMainWrapper">
                         <div className="is-heading gradient-background"><h3>Service Highlight</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights
-                                    imageUrl="/icons/search-engine.png"
-                                    title="Performance and Search Engine Optimization"
-                                    description="Built from the ground up for performance and visibility — every line of code matters."
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/cms.png"
-                                    title="Content Management System Integration"
-                                    description="Take full control of your content. From WordPress to headless CMS platforms like Sanity and Contentful, manage your content your way."
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/responsive.png"
-                                    title="Fully Responsive Design Across Devices"
-                                    description="Flawless display on all screen sizes – from desktop to mobile – ensuring a polished, professional experience everywhere."
-                                />
-                                <FeatureHighlights
-                                    imageUrl="/icons/website.png"
-                                    title="Conversion-Focused UX"
-                                    description="We blend form and function to guide visitors toward action — whether that’s buying, booking, or reaching out."
-                                />
+                                <div className='is-heading gradient-background headingWrapper'>
+                                    <h3>Expert Guidance for Smarter IT Decisions</h3>
+                                </div>
+                                <div className='duoColumns'>
+                                    <div className='duoColumn1'>
+                                        <div className='contentWrapper'>
+                                            <h4>Key Features:</h4>
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="24/7 Monitoring & Support"
+                                                description="Our team proactively monitors your infrastructure to catch issues before they cause downtime. When something breaks, we’re just a call or clickaway"
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Endpoint Management"
+                                                description="We manage updates, patches, antivirus, and backups across every user device — ensuring your workforce stays protected and productive."
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Server & Network Administration"
+                                                description="From cloud servers to office networks, we ensure your systems run fast, stay secure, and scale smoothly as your business grows."
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Helpdesk Services"
+                                                description="Get fast, reliable support from real technicians — no phone trees or long waits. We resolve most user issues in minutes, not hours."
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className='duoColumn2'>
+                                        <div className='contentWrapper'>
+                                            <h4>Key Features:</h4>
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Technology Strategy & Planning"
+                                                description="We align your IT infrastructure with your business goals — helping you plan smarter, budget better, and avoid tech debt."
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Infrastructure Audits"
+                                                description="Get a detailed view of what's working, what's not, and how to strengthen your systems for reliability and compliance."
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Vendor & Tool Selection"
+                                                description="From software platforms to cloud providers, we help you choose solutions that fit your business — and avoid the ones that don’t."
+                                            />
+                                            <FeatureHighlights
+                                                imageUrl=""
+                                                title="Cybersecurity Advisory"
+                                                description="Stay ahead of risks with expert assessments, compliance support (like HIPAA or ISO 27001), and actionable risk mitigation strategies."
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +93,7 @@ export default function managedItServices() {
                         <div className="is-heading gradient-background"><h3>What Our Clients Say</h3></div>
                         <div className="isContent led-text">
                             <div className="itemsWrapper">
-                                <DotMatrixReviews /> 
+                                {/* <DotMatrixReviews />  */}
                             </div>
                         </div>
                     </div>

@@ -68,43 +68,43 @@ export default function DigitalMarketingServices() {
                             </div>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
-                                    imageUrl="/icons/wordpress.png"
-                                    title="WordPress"
+                                    imageUrl="/icons/adwords.png"
+                                    title="Google Ads"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/webflow.png"
-                                    title="Webflow"
+                                    imageUrl="/icons/meta.png"
+                                    title="Meta Ads"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/sanity.png"
-                                    title="Sanity"
+                                    imageUrl="/icons/hubspot.png"
+                                    title="HubSpot"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/strapi.png"
-                                    title="Strapi"
+                                    imageUrl="/icons/mailchimp.png"
+                                    title="Mailchimp"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/contentful.png"
-                                    title="Contentful"
+                                    imageUrl="/icons/semrush.png"
+                                    title="SEMrush"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/jamstack.png"
-                                    title="Jamstack"
+                                    imageUrl="/icons/google-analytics.png"
+                                    title="GA4"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/shopify.png"
-                                    title="Shopify"
+                                    imageUrl="/icons/linkedin.png"
+                                    title="LinkedIn Ads"
                                     description=""
                                 />
                                 <FeatureHighlights
-                                    imageUrl="/icons/nextjs.png"
-                                    title="Next.js"
+                                    imageUrl="/icons/klaviyo.png"
+                                    title="Klaviyo"
                                     description=""
                                 />
                             </div>

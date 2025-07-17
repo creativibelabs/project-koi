@@ -12,8 +12,8 @@ export default function DotMatrixReviews() {
         const CHAR_WIDTH = 5;
         const CHAR_HEIGHT = 9;
         const CHAR_SPACE = 1;
-        const CHAR_COUNT = 32;
-        const BUF_CHAR_COUNT = 256;
+        const CHAR_COUNT = 128;
+        const BUF_CHAR_COUNT = 500;
 
         const DM_WIDTH = CHAR_COUNT * (CHAR_WIDTH + CHAR_SPACE);
         const DM_HEIGHT = CHAR_HEIGHT;
