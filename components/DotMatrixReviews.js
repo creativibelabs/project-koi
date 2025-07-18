@@ -10,9 +10,9 @@ export default function DotMatrixReviews() {
 
         // === Matrix Config ===
         const CHAR_WIDTH = 5;
-        const CHAR_HEIGHT = 9;
+        const CHAR_HEIGHT = 54;
         const CHAR_SPACE = 1;
-        const CHAR_COUNT = 128;
+        const CHAR_COUNT = 100;
         const BUF_CHAR_COUNT = 500;
 
         const DM_WIDTH = CHAR_COUNT * (CHAR_WIDTH + CHAR_SPACE);

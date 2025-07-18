@@ -93,7 +93,7 @@ export default function managedItServices() {
                         <div className="is-heading gradient-background"><h3>What Our Clients Say</h3></div>
                         <div className="isContent led-text">
                             <div className="itemsWrapper">
-                                {/* <DotMatrixReviews />  */}
+                                <DotMatrixReviews /> 
                             </div>
                         </div>
                     </div>
