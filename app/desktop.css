@@ -1,0 +1,138 @@
+p
+{
+    font-weight: 300;
+}
+
+.content-section {
+    padding: 20px 20px 40px 20px;
+}
+
+.image-button-wrap a
+{
+    width: 100%;
+    justify-content: center;
+}
+
+.ServicesCardsContent img {
+    width: 160px;
+}
+
+.image-button-wrap {
+    align-items: center;
+        margin-bottom: 10px;
+}
+
+.ServicesCardsContent .heading
+{
+    font-size: 22px;
+}
+
+
+.ServicesCardsHeading,
+.whyChooseUsHeading,
+.industriesServeMainWrapper .is-heading
+{
+    padding: 5px 18px 10px 18px;
+}
+
+.industriesServeMainWrapper .isContent
+{
+    padding: 14px 16px 28px 16px;
+}
+
+.itemsWrapper ul li
+{
+    min-width: auto;
+    flex: 24%;
+    transition: all .5s ease;
+}
+
+.stContent p.content {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 33px;
+    width: auto;
+}
+
+.stContent {
+
+    padding: 20px 20px 30px 20px;
+}
+
+.content-section p
+{
+    font-weight: 300;
+}
+
+.site_readmore
+{
+    font-weight: 600;
+    color: #c3f8d9;
+    display: inline-flex;
+    transition: all .5s ease;
+
+}
+
+.site_readmore:hover
+{
+    color: #39ff14;;
+}
+
+.site_readmore svg
+{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    overflow: visible;
+    transition: all .5s ease;
+
+}
+
+.buttons-wrapper a, .button
+{
+    transition: all .5s ease;
+}
+
+.buttons-wrapper a:hover, .button:hover
+{
+    background-color: #c3f8d9;
+    color: #333;
+}
+
+.site_readmore svg ellipse
+{
+        transition: all .5s ease;
+}
+
+.site_readmore:hover svg ellipse
+{
+   fill : #39ff14;
+}
+
+.whyChooseUsHeading h2,
+.is-heading h2,
+.ServicesCardsHeading h2,
+.StillThinkingMainWrapper h2
+
+{
+    color: #c3f8d9;
+}
+
+.mobileLinks a {
+    padding-left: 30px;
+    position: relative;
+}
+
+.mobileMenuWrapper .mobileLinks a::before
+{
+    content: "";
+    font-size: inherit;
+    display: inline-block;
+    background-image: url('data:image/svg+xml,<svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="%2339ff14" d="M8 3a5 5 0 100 10A5 5 0 008 3z"/></svg>');
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
