@@ -36,7 +36,7 @@ export default function FlagDropdown() {
   };
 
   return (
-    <div className="flagImage cursor-pointer">
+    <div className="flagImage cursor-pointer relative">
       {/* Selected Flag */}
       <div onClick={toggleDropdown}>
         <Image

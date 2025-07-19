@@ -71,7 +71,9 @@ export default function Home() {
       <div className="whyCHooseUsWrapper">
         <div className="whyChooseUsHeading gradient-background"><h2>Why Choose Us?</h2></div>
         <div className="whyChooseUsCardContents">
-          <p className="wcu-heading"><span className="heading-1">Smart IT Solutions with Real Business Benefits</span><br /><span className="heading-2">We don’t just provide services – we deliver results. Here’s what you can expect when you partner with us.</span></p>
+          <p className="wcu-heading">
+            <span className="heading-1 block mb-2">Smart IT Solutions with Real Business Benefits</span>
+            <span className="heading-2">We don’t just provide services – we deliver results. Here’s what you can expect when you partner with us.</span></p>
           <div className="cardWrappers">
             <WhyChooseUsCard 
               imageUrl="/images/why-choose-1.png"
@@ -127,7 +129,7 @@ export default function Home() {
       <div className="StillThinkingMainWrapper">
         <div className="st-heading gradient-background"><h2>Still Thinking?</h2></div>
         <div className="stContent">
-          <p className="heading-1">No problem! Explore our <Link href="#" className="link-text">Interactive Demo</Link></p>
+          <p className="heading-1 mb-4">No problem! Explore our <Link href="#" className="link-text">Interactive Demo</Link></p>
           <p className="content">
             Dive into real scenarios and see firsthand how our IT solutions work for your business. Whether you're testing cloud integration, exploring security features, or just curious, it's an easy and fun way to get familiar with what we offer—no commitment, just exploration.
           </p>
