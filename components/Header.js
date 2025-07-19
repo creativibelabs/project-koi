@@ -14,7 +14,7 @@ export default function Header() {
   const isActive = (href) => pathname === href;
 
   return (
-    <header className={`headerMainWrapper gradient-background`}>
+    <header className={`headerMainWrapper gradient-background fixed z-10 w-[100%]`}>
       <div className='headerWrapper'>
         <div className='logoWrapper'>
           <Link href='#'><Image src="/images/logo.png" width={100} height={10} alt="Logo" /></Link>
