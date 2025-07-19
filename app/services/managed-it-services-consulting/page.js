@@ -1,11 +1,15 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import FeatureHighlights from '@/components/FeatureHighlights';
-import DotMatrixReviews from '@/components/DotMatrixReviews';
+import ReviewSlider from '@/components/ReviewSlider';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function managedItServices() {
+    const quotes = [
+        'We\'ve seen a 90% drop in support tickets and can finally focus on growing our business, not fixing tech issues. — Operations Manager, Mid-size Manufacturing Firm.',
+        'They helped us clean up a mess of systems and migrate to a secure, scalable cloud setup with no downtime. — CEO, Professional Services Firm.',
+    ];
     return (
         <div>
             <Breadcrumb />
@@ -89,11 +93,13 @@ export default function managedItServices() {
                             </div>
                         </div>
                     </div>
-                    <div className="industriesServeMainWrapper featuresHighlight">
-                        <div className="is-heading gradient-background"><h3>What Our Clients Say</h3></div>
-                        <div className="isContent led-text">
-                            <div className="itemsWrapper">
-                                <DotMatrixReviews /> 
+                    <div className="whyCHooseUsWrapper coreValues">
+                        <div className="whyChooseUsHeading gradient-background"><h2>What Our Clients Say</h2></div>
+                        <div className="whyChooseUsCardContents">
+                            <div className="cardWrappers">
+                                <ReviewSlider
+                                    reviews={quotes}
+                                />
                             </div>
                         </div>
                     </div>

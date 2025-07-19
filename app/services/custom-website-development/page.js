@@ -29,7 +29,7 @@ export default function CustomWebsiteDevelopment() {
                                     business online, we deliver web experiences that blend design excellence with
                                     technical precision.
                                 </p>
-                                <Image src="/images/web-dev-image1.png" width={6000} height={6000}/>
+                                <Image src="/images/web-dev-image1.png" width={6000} height={6000} alt="banner image"/>
                             </div>
                         </div>
                     </div>

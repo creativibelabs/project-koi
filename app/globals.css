@@ -24,8 +24,8 @@ header {
   border: 1px solid white;
 }
 
-.sub-menu a.nav-menu {
-  width: 400px;
+.sub-menu a.sub-nav-menu {
+  width: 300px;
   text-align: left;
 }
 
@@ -383,6 +383,12 @@ a {
   width: 10px;
 }
 
+.navBar {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
 .searchLangWrapper {
   width: 14%;
   display: flex;
@@ -439,9 +445,23 @@ a {
 
 .menuWrapper .active {
   color: #39ff14;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.sub-nav-menu.active {
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
 
 .menuWrapper .nav-menu:hover {
+  color: #39ff14;
+}
+
+.menuWrapper .sub-nav-menu:hover {
   color: #39ff14;
 }
 
@@ -577,53 +597,105 @@ a {
 .itemsWrapper1 ul li:hover {
   transform: scale(1.02);
 }
-
+/* 
 .arrow path {
   opacity: 0;
   animation: flashIn 1.8s infinite;
 }
 
 .arrow path:nth-child(3) {
-  animation-delay: 0s; /* Teesra arrow (first to appear) */
+  animation-delay: 0s; 
 }
 
 .arrow path:nth-child(2) {
-  animation-delay: 0.3s; /* Dusra arrow */
+  animation-delay: 0.3s;
 }
 
 .arrow path:nth-child(1) {
-  animation-delay: 0.6s; /* Phela arrow (last to appear) */
+  animation-delay: 0.6s;
+} */
+
+.arrow {
+  position: relative;
+  width: 100px; /* Adjust to match image size */
+  height: auto;
+  display: flex;
+}
+
+.arrow img {
+  width: auto !important;
+  height: 35px !important;
+}
+
+.arrow-layer {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: flashIn 1.8s infinite;
+}
+
+.layer-3 {
+  animation-delay: 0.6s;
+}
+.layer-2 {
+  animation-delay: 0.3s;
+}
+.layer-1 {
+  animation-delay: 0s;
+}
+
+.layer-2,
+.layer-3 {
+  margin-left: -9px;
+}
+
+@keyframes flashIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.subMenuWrapper {
+  left: 0px;
+  top: 35px;
+  z-index: 99999;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(15px);
+  opacity: 0;
+  visibility: hidden;
+  background-color: #00000069;
+  border-radius: 10px;
+}
+
+.nav_menu_wrapper:hover .subMenuWrapper {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sub-menu {
-  width: 400px;
+  width: 343px;
   display: flex;
   flex-direction: column;
-  left: -134px;
-  top: 24px;
   border-radius: 10px;
   gap: 10px;
-  backdrop-filter: blur(15px);
-  height: 0px;
-  padding: 0;
   transition: all 0.3s ease-in-out;
   border: 1px solid #ffffff66;
-  z-index: 99999;
 }
 
-.sub-menu .nav-menu {
-  font-size: 0px;
+.sub-menu {
+  padding: 20px;
 }
 
-.nav-menu:hover .sub-menu {
-  height: unset;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  opacity: 1 !important;
-}
-
-.nav-menu:hover .sub-menu .nav-menu {
-  font-size: 18px;
+.sub-menu .sub-nav-menu {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @keyframes flashIn {
@@ -1179,4 +1251,332 @@ p.subHeadings {
   font-size: 14px !important;
   color: white;
 }
+
+.ServicesCardsContent .mainWrapper {
+  width: 32%;
+  border: 2px solid #ffffff66;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px 15px 15px 15px;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.ServicesCardsContent .mainWrapper .bgImage {
+  width: 100%;
+}
+
+.ServicesCardsContent .mainWrapper .bgImage img {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+.serviceContent {
+  padding: 20px;
+  backdrop-filter: blur(15px);
+}
+
+.serviceContent .Icon {
+  width: 80px;
+  height: 80px;
+  margin-top: -65px;
+}
+
+.serviceContent .heading h5 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.serviceContent .heading {
+  width: 60%;
+  margin-top: 20px;
+  min-height: 55px;
+}
+
+.serviceContent .description {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 24px;
+  min-height: 98px;
+}
+
+.mainServiceLink a {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mainServiceLink a img {
+  width: 30px;
+}
+
+.cmsWork2 .service-card-wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 15%;
+}
+
+.cmsWork2 .itemsWrapper {
+  justify-content: center;
+}
+
+.cmsWork2 .isContent {
+  padding-top: 0 !important;
+}
+
+.service-hero-section {
+  margin-top: 100px;
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid #ffffff66;
+  padding: 30px 15px;
+
+  background-image: url("/images/service-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.service-hero-section h1 {
+  font-size: 52px;
+}
+
+.service-hero-section p {
+  font-size: 28px;
+  width: 98%;
+}
+
+span.\32 text-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+p.green-text,
+p.white-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 35%;
+}
+p.green-text {
+  color: #39ff14;
+}
+span.\32 text-content img {
+  width: 20px;
+}
+
 /* Services Page CSS End */
+
+.bounce {
+  animation: bounceAnim 2s infinite;
+}
+
+@keyframes bounceAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.bounce {
+  animation: bounceAnim 2s infinite;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* About Start */
+
+.hero-section-about {
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid #ffffff66;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.content-section-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.content-wrapper-about {
+  backdrop-filter: blur(15px);
+  background: #00000033;
+  padding: 50px 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+h1.main-heading {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #98c1a9;
+  text-shadow: 1px 1px 30px black;
+}
+
+.content-wrapper-about p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button-wrapper {
+  text-align: center;
+  background: #98c1a9;
+  padding: 10px 30px;
+  border-radius: 108px;
+  font-size: 20px;
+}
+
+.content-section-about {
+  background-image: url("/images/about-bg.png");
+}
+
+.coreValues .whyChooseUsCardContents {
+  /* padding-top: 0px; */
+  /* padding-bottom: 25px; */
+}
+
+.coreValues .service-card-wrap {
+  width: 24.2%;
+  margin-top: 0;
+  text-align: center;
+}
+
+.coreValues .cardWrappers {
+  gap: 1%;
+}
+
+.coreValues .heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: #98c1a9;
+}
+
+.coreValues .description {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.missionVission {
+  display: flex;
+  gap: 2%;
+}
+
+/* About End */
+
+.review-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  position: absolute;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transform: translateY(300px);
+  animation: slideUp 10s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.about .content {
+  text-align: center;
+  color: #98c1a9;
+  font-size: 50px !important;
+  font-weight: 600 !important;
+}
+
+.careerOp .cardWrappers {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.jobMainWrap {
+  border: 1px solid #ffffff66;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(15px);
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+p.titleText {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+p.exp {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.titleWrap .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+p.location {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.buttonWrap {
+  background: green;
+}
+
+.careerOp .buttons-wrapper {
+  margin: 0;
+}

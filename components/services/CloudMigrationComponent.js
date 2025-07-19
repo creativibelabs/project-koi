@@ -12,7 +12,7 @@ export default function CloudMigration() {
                         <p>
                             We help businesses move to the cloud with confidence – minimizing disruption while maximizing long-term value.
                         </p>
-                        <Image src="/images/cloud-image1.png" width={6000} height={6000} />
+                        <Image src="/images/cloud-image1.png" width={6000} height={6000} alt="cloud image"/>
                     </div>
                 </div>
             </div>

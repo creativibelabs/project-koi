@@ -11,7 +11,7 @@ import { navLinks } from '@/constant/constants';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-
+  // console.log( pathname );
   const isActive = (href) => pathname === href;
 
   return (
@@ -37,33 +37,61 @@ export default function Header() {
             ))} */}
 
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`relative ${
-                  isActive(link.href)
-                    ? 'nav-menu active'
-                    : 'nav-menu'
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.name}
-                {link.subMenu && (
-                  <div className="absolute sub-menu" style={{opacity: '0'}} >
-                    {link.subMenu.map((subLink) => (
-                      <Link
-                        key={link.href + subLink.href}
-                        href={`${link.href}/${subLink.href.replace(/^\//, '')}`}
-                        className="nav-menu"
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {subLink.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </Link>
+              !link.subMenu ? (
+                <div key={link.href} className='relative nav_menu_wrapper'>
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`relative ${isActive(link.href) ? 'nav-menu active' : 'nav-menu'}`}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                </div>
+              ) : (
+                <div key={link.href} className="relative nav_menu_wrapper">
+                  {/** Check if any subLink is active */}
+                  {(() => {
+                    const isParentActive =
+                      isActive(link.href) ||
+                      link.subMenu?.some((subLink) =>
+                        isActive(`${link.href}/${subLink.href.replace(/^\//, '')}`)
+                      );
+
+                    return (
+                      <>
+                        <Link
+                          href={link.href}
+                          className={`relative ${isParentActive ? 'nav-menu active' : 'nav-menu'}`}
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {link.name}
+                        </Link>
+
+                        <div className="absolute subMenuWrapper">
+                          <div className="sub-menu">
+                            {link.subMenu.map((subLink) => {
+                              const finalLink = `${link.href}/${subLink.href.replace(/^\//, '')}`;
+                              return (
+                                <Link
+                                  key={link.href + subLink.href}
+                                  href={finalLink}
+                                  className={`sub-nav-menu ${isActive(finalLink) ? 'active' : ''}`}
+                                  onClick={() => setMenuOpen(false)}
+                                >
+                                  {subLink.name}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </>
+                    );
+                  })()}
+                </div>
+              )
             ))}
+
           </nav>
         </div>
         <div className='searchLangWrapper'>
@@ -80,7 +108,7 @@ export default function Header() {
           </div>
           {/* Hamburger Menu */}
           <button className="md:hidden focus:outline-none" onClick={() => setMenuOpen(!menuOpen)} >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {menuOpen ? <Image src="/icons/close.png" width={24} height={24} alt='close menu' /> : <Image src="/icons/hamburger.png" width={24} height={24} alt='open menu' />}
           </button>
         </div>
       </div>
@@ -91,11 +119,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block text-sm font-medium ${
-                  isActive(link.href)
-                    ? 'text-blue-600 underline underline-offset-4'
-                    : 'text-gray-700 hover:text-blue-600'
-                }`}
+                className={`block text-sm font-medium ${isActive(link.href)
+                  ? 'text-blue-600 underline underline-offset-4'
+                  : 'text-gray-700 hover:text-blue-600'
+                  }`}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}

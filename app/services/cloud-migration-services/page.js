@@ -43,7 +43,7 @@ export default function CloudMigrationServices() {
                         (tab) =>
                             activeTab === tab.name && (
                                 <div key={tab.name}>
-                                    <p>{tab.content}</p>
+                                    {tab.content}
                                 </div>
                             )
                     )}

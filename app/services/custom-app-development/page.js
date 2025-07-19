@@ -27,7 +27,7 @@ export default function CustomAppDevelopment() {
                                     modernizing legacy systems, we align technology with your vision to deliver real
                                     results.
                                 </p>
-                                <Image src="/images/app-dev-image2.jpg" width={6000} height={6000}/>
+                                <Image src="/images/app-dev-image2.jpg" width={6000} height={6000} alt="banner image"/>
                             </div>
                         </div>
                     </div>

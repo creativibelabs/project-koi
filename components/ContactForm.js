@@ -105,7 +105,7 @@ export default function ContactForm() {
           onChange={handleChange}
           className={` input-field ${errors.subject ? 'error' : ''}`}
         >
-          <option value="" disabled selected>Subject</option>
+          <option value="" disabled defaultValue>Subject</option>
           <option value="General inquiry">General inquiry</option>
           <option value="Request a quotation">Request a quotation</option>
           <option value="Book a consultation">Book a consultation</option>
