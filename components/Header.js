@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Search } from 'lucide-react';
@@ -11,31 +11,16 @@ import { navLinks } from '@/constant/constants';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  // console.log( pathname );
   const isActive = (href) => pathname === href;
 
   return (
-    <header className='headerMainWrapper gradient-background'>
+    <header className={`headerMainWrapper gradient-background`}>
       <div className='headerWrapper'>
         <div className='logoWrapper'>
           <Link href='#'><Image src="/images/logo.png" width={100} height={10} alt="Logo" /></Link>
         </div>
         <div className='menuWrapper mobile-hide'>
           <nav className="navBar">
-            {/* {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${
-                  isActive(link.href)
-                    ? 'nav-menu active'
-                    : 'nav-menu'
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))} */}
-
             {navLinks.map((link) => (
               !link.subMenu ? (
                 <div key={link.href} className='relative nav_menu_wrapper'>
