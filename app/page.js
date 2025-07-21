@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import ServicesCards from '@/components/ServicesCards';
 import WhyChooseUsCard from '@/components/whyChooseUsCard';
+import IndustriesWeServe from "@/components/IndustriesWeServe";
 
 export default function Home() {
   return (
@@ -23,42 +24,42 @@ export default function Home() {
       <div className="ServicesCardsWrapper">
         <div className="ServicesCardsHeading gradient-background"><h2>Our Services</h2></div>
         <div className="ServicesCardsContent">
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
             heading="Custom App Development"
             description="Tailored software, mobile app and web applications turning your ideas into powerful digital solutions"
           />
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
             heading="Web Development"
             description="Responsive, SEO-friendly websites - from sleek portfolios to full-featured e-commerce stores - showcase your brand and drive real results."
           />
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
             heading="Cloud Migration & Storage"
             description="Seamlessly migrate to the cloud – boosting performance, security, and scalability."
           />
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
             heading="AI Powered Solutions"
             description="Leverage AI and machine learning to streamline operations, personalize experiences, and drive data-backed decisions"
           />
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
             heading="Managed IT Services & Consulting"
             description="Enterprise-grade IT management and strategic consulting to optimize operations"
           />
-          <ServicesCards 
+          <ServicesCards
             imageUrl="/images/service-card-image.png"
             buttonText="Learn More"
             link="#"
@@ -75,21 +76,21 @@ export default function Home() {
             <span className="heading-1 block mb-2">Smart IT Solutions with Real Business Benefits</span>
             <span className="heading-2">We don’t just provide services – we deliver results. Here’s what you can expect when you partner with us.</span></p>
           <div className="cardWrappers">
-            <WhyChooseUsCard 
+            <WhyChooseUsCard
               imageUrl="/images/why-choose-1.png"
               link="#"
               title="End-to-End Expertise"
               tags={['3D', 'AR/VR/MR', '2D']}
               description="We off complete digital solutions – from strategy to launch – so you get everything under one roof."
             />
-            <WhyChooseUsCard 
+            <WhyChooseUsCard
               imageUrl="/images/why-choose-2.png"
               link="#"
               title="Performance-Focused Solutions"
               tags={['3D', 'AR/VR/MR', '2D']}
               description="We focus on measurable outcomes – we deliver solutions that drive real business value."
             />
-            <WhyChooseUsCard 
+            <WhyChooseUsCard
               imageUrl="/images/why-choose-3.png"
               link="#"
               title="Reliable Support & Partnership"
@@ -103,22 +104,7 @@ export default function Home() {
       <div className="industriesServeMainWrapper">
         <div className="is-heading gradient-background"><h2>Industries We Serve</h2></div>
         <div className="isContent">
-          <div className="itemsWrapper">
-            <ul>
-              <li>Manufacture</li>
-              <li>Imp / Exp</li>
-              <li>Logistics</li>
-              <li>Retail</li>
-              <li>Professional Services</li>
-              <li>Finance</li>
-              <li>Schools</li>
-              <li>Health Service</li>
-              <li>Food Service</li>
-              <li>Renovation</li>
-              <li>Freelance</li>
-              <li>And More...</li>
-            </ul>
-          </div>
+          <IndustriesWeServe />
           <div className="buttons-wrapper">
             <Link href="#">See Case Studies</Link>
             <Link href="#">Explore How It Works</Link>
