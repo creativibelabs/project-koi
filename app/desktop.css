@@ -36,7 +36,7 @@ p {
 .IndustriesWeServe img {
   height: auto;
 }
- .IndustriesWeServe li {
+.IndustriesWeServe li {
   min-width: auto;
   flex: 15%;
   transition: all 0.5s ease;
@@ -123,4 +123,204 @@ p {
   position: absolute;
   top: 3px;
   left: 0px;
+}
+/* Organization Struture */
+
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* .org-chart ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #aaa;
+  height: 20px;
+} */
+
+.org-chart li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 5px;
+  position: relative;
+}
+
+/* .org-chart li::before,
+.org-chart li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #aaa;
+  width: 50%;
+  height: 20px;
+} */
+
+/* .org-chart li::before {
+  left: -50%;
+  border-right: 2px solid #aaa;
+}
+
+.org-chart li::after {
+  right: -50%;
+  border-left: 2px solid #aaa;
+} */
+
+.org-chart li:only-child::before,
+.org-chart li:only-child::after {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+/* .org-chart li:first-child::before,
+.org-chart li:last-child::after {
+  border: 0 none;
+} */
+
+/* .org-chart li:last-child::before {
+  border-right: 2px solid #aaa;
+  border-radius: 0 5px 0 0;
+}
+
+.org-chart li:first-child::after {
+  border-left: 2px solid #aaa;
+  border-radius: 5px 0 0 0;
+} */
+
+.box {
+  background: linear-gradient(
+      0deg,
+      rgba(25, 66, 48, 0.5),
+      rgba(25, 66, 48, 0.5)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(153, 153, 153, 0.15) 100%
+    );
+  padding: 10px 1rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  position: relative;
+  border: 1px solid #3cb184;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #3cb184;
+  max-width: 148px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure level-2 nodes (CTO, COO, CFO) are in one line */
+.org-chart .level-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* optional spacing between them */
+  padding-top: 76px;
+  margin-left: -33px;
+}
+
+/* Optional: prevent child <li> from breaking */
+.org-chart .level-2 > li {
+  flex-shrink: 0;
+}
+.org-chart li p:nth-child(1) {
+  font-weight: 800;
+  background: linear-gradient(
+      0deg,
+      rgba(25, 66, 48, 0.5),
+      rgba(25, 66, 48, 0.5)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(153, 153, 153, 0.15) 100%
+    );
+
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 65px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.org-chart li p:nth-child(2),
+ul.parent::before {
+  display: none;
+}
+
+.box.top.text-3xl::before {
+  position: absolute;
+  content: "";
+  background-image: url("/icons/downArrow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -32px;
+  width: 100%;
+  height: 32px;
+  z-index: -9;
+}
+.box.text-\[28px\]::before {
+  position: absolute;
+  content: "";
+  background-image: url(/icons/long-dwn-arrow.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: -74px;
+  height: 100%;
+  z-index: -9;
+  width: 720px;
+}
+.box.text-\[28px\] {
+  margin-top: 20px;
+}
+.text-2xl.box {
+  margin-bottom: 30px;
+}
+.text-2xl.box::before {
+  position: absolute;
+  content: "";
+  background-image: url(/icons/short-dwn-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: -55px;
+  height: 100%;
+  z-index: -9;
+  width: 109%;
+  background-size: contain;
+}
+
+.box.text-\[16px\]:last-child::before {
+  position: absolute;
+  content: "";
+  background-image: url("/icons/downArrow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -54px;
+  width: 100%;
+  height: 32px;
+  z-index: -9;
+}
+
+.box.text-\[16px\]:last-child {
+  margin-top: 22px;
 }

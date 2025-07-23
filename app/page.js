@@ -7,7 +7,7 @@ import IndustriesWeServe from "@/components/IndustriesWeServe";
 export default function Home() {
   return (
     <>
-      <div className="hero-section">
+      <div className="hero-section pt-36">
         <div className="content-section gradient-background">
           <h1>IT Solutions Tailored to Your Business</h1>
           <p>From day-to-day support to long term strategy, we deliver cost efficient, flexible IT services designed to match your goals and specific way of working</p>

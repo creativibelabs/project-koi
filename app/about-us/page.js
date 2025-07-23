@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ServicesCards from '@/components/ServicesCards';
 import ReviewSlider from '@/components/ReviewSlider';
 import Jobs from '@/components/Jobs';
+import Organizationstructure from "@/components/Organizationstructure";
 
 export default function AboutUs() {
 
@@ -16,7 +17,7 @@ export default function AboutUs() {
 
     return (
         <>
-            <div className="hero-section-about">
+            <div className="hero-section-about pt-36">
                 <div className="content-section-about">
                     <div className="content-wrapper-about">
                         <h1 className="main-heading">Who We Are</h1>
@@ -94,7 +95,7 @@ export default function AboutUs() {
             <div className="whyCHooseUsWrapper coreValues">
                 <div className="whyChooseUsHeading gradient-background"><h2>Organization Structure</h2></div>
                 <div className="whyChooseUsCardContents">
-                    <div className="cardWrappers">
+                    {/* <div className="cardWrappers">
                         <div className="org-chart">
                             <div className="org-node">Board of Directors</div>
 
@@ -133,7 +134,8 @@ export default function AboutUs() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <Organizationstructure />
                 </div>
             </div>
 
