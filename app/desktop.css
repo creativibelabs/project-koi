@@ -40,7 +40,6 @@ p {
   min-width: auto;
   flex: 15%;
   transition: all 0.5s ease;
-  border-color: #39ff14;
 }
 
 .IndustriesWeServe img {
@@ -323,4 +322,63 @@ ul.parent::before {
 
 .box.text-\[16px\]:last-child {
   margin-top: 22px;
+}
+/* why choose us */
+.step {
+  position: absolute;
+  padding: 1rem 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -99;
+  width: 400px;
+  height: 120px;
+}
+
+.step h6 {
+  color: #39ff14;
+  font-size: 22px;
+  font-weight: bold;
+}
+.step p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.step-1 {
+  text-align: end;
+  background-image: url("/images/step1.svg");
+  top: 24px;
+  right: 105px;
+  padding: 1rem 4rem;
+}
+
+.step-2 {
+  text-align: end;
+  background-image: url("/images/step2.svg");
+  top: 245px;
+  right: 50px;
+}
+
+.step-3 {
+  text-align: end;
+  background-image: url("/images/step3.svg");
+  top: 460px;
+  right: 85px;
+}
+
+.step-4 {
+  background-image: url("/images/step4.svg");
+  top: 465px;
+  left: 90px;
+}
+.step-5 {
+  top: 245px;
+  left: 60px;
+  background-image: url("/images/step5.svg");
+}
+.step-6 {
+  top: 23px;
+  left: 100px;
+  background-image: url("/images/step6.svg");
 }

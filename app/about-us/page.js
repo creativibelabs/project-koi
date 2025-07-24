@@ -10,10 +10,24 @@ import Organizationstructure from "@/components/Organizationstructure";
 export default function AboutUs() {
 
     const quotes = [
-        '"Working here has been an incredible journey — the team is supportive, and every project pushes me to grow." — Ayesha Khan, Frontend Developer',
-        '"I love how we prioritize creativity and collaboration. It\'s more than a job — it feels like a shared mission." — Usman Raza, UX Designer',
-        '"Every day brings a new challenge, and that\'s exactly what keeps me motivated.The energy here is unmatched." — Fatima Ali, Project Manager',
+        {
+            name: "Ayesha Khan",
+            review: "Working here has been an incredible journey — the team is supportive, and every project pushes me to grow.",
+            designation: "Frontend Developer"
+        },
+        {
+            name: "Usman Raza",
+            review: "I love how we prioritize creativity and collaboration. It\'s more than a job — it feels like a shared mission.",
+            designation: " UX Designer",
+        },
+        {
+            name: "Fatima Ali",
+            review: "Every day brings a new challenge, and that\'s exactly what keeps me motivated.The energy here is unmatched.",
+            designation: "Project Manager",
+
+        }
     ];
+
 
     return (
         <>

@@ -12,9 +12,19 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const isActive = (href) => pathname === href;
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className={`headerMainWrapper gradient-background fixed z-10 w-[100%]`}>
+    <header className={`headerMainWrapper rounded-[10px] gradient-background fixed z-10 w-[100%] ${scrolled ? 'bg-transparent' : 'bg-white shadow-md'}`}>
       <div className='headerWrapper'>
         <div className='logoWrapper'>
           <Link href='#'><Image src="/images/logo.png" width={100} height={10} alt="Logo" /></Link>

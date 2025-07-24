@@ -51,7 +51,7 @@ export default function Footer() {
                             ))}
                         </div>
                     </div>
-                    <div className='socialIconsWrapper'>
+                    <div className='socialIconsWrapper gap-8'>
                         <p>Follow <span className='neon-green'>Us</span></p>
                         <div className='icons'>
                             <Link href="#">      

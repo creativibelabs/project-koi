@@ -18,11 +18,11 @@ body {
   color: white;
 }
 
-header {
+/* header {
   background-color: rgb(255 255 255 / 40%);
   border-radius: 10px;
   border: 1px solid white;
-}
+} */
 
 .sub-menu a.sub-nav-menu {
   width: 300px;
@@ -553,7 +553,6 @@ a {
 .socialIconsWrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .socialIconsWrapper p {
