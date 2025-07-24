@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="whyCHooseUsWrapper">
         <div className="whyChooseUsHeading gradient-background"><h2>Why Choose Us?</h2></div>
-        {/* <div className="whyChooseUsCardContents">
+        <div className="whyChooseUsCardContents">
           <p className="wcu-heading">
             <span className="heading-1 block mb-2">Smart IT Solutions with Real Business Benefits</span>
             <span className="heading-2">We don’t just provide services – we deliver results. Here’s what you can expect when you partner with us.</span></p>
@@ -99,10 +99,10 @@ export default function Home() {
               description="We don’t just delivery projects – we build long-term relationships with proactive support and honest communication."
             />
           </div>
-        </div> */}
-        <div className="whyChooseUsCardContents items-center justify-center">
-          <WhyChooseUs />
         </div>
+        {/* <div className="whyChooseUsCardContents items-center justify-center">
+          <WhyChooseUs />
+        </div> */}
       </div>
 
       <div className="industriesServeMainWrapper">

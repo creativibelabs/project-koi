@@ -341,7 +341,7 @@ ul.parent::before {
   font-weight: bold;
 }
 .step p {
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 500;
 }
 
@@ -381,4 +381,25 @@ ul.parent::before {
   top: 23px;
   left: 100px;
   background-image: url("/images/step6.svg");
+}
+
+/* Service-Digital Page */
+.pieChart .step-1 {
+  top: 75px;
+  right: 35px;
+}
+
+.pieChart .step-6 {
+  top: 75px;
+  left: 35px;
+}
+
+.pieChart .step-4 {
+  left: 15px;
+  top: 450px;
+}
+
+.pieChart .step-3 {
+  top: 450px;
+  right: 10px;
 }

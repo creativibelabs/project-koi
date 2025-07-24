@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Lottie from "lottie-react";
 import animationData from "../../../public/lottie/rising-chart.json";
+import WhyChooseUs2 from '@/components/WhyChooseUs2';
 
 export default function DigitalMarketingServices() {
     return (
@@ -41,7 +42,7 @@ export default function DigitalMarketingServices() {
                     <div className="industriesServeMainWrapper featuresHighlight">
                         <div className="is-heading gradient-background"><h3>Service types</h3></div>
                         <div className="isContent">
-                            <div className="itemsWrapper">
+                            <div className="itemsWrapper justify-center">
                                 <FeatureHighlights
                                     imageUrl="/icons/search-engine.png"
                                     title="SEO & Content Strategy"
@@ -60,11 +61,11 @@ export default function DigitalMarketingServices() {
                             </div>
                         </div>
                     </div>
-                    <div className="industriesServeMainWrapper featuresHighlight cmsWork">
+                    <div className="industriesServeMainWrapper pieChart featuresHighlight cmsWork">
                         <div className="is-heading gradient-background"><h3>Funnel-Based Solutions</h3></div>
                         <div className="isContent">
-                            <div className="itemsWrapper">
-                                Flow Chart
+                            <div className="itemsWrapper justify-center">
+                                 <WhyChooseUs2 />
                             </div>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
