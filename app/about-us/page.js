@@ -45,21 +45,28 @@ export default function AboutUs() {
 
             <div className="whyCHooseUsWrapper coreValues">
                 <div className="whyChooseUsHeading gradient-background"><h2>Core Values</h2></div>
-                <div className="whyChooseUsCardContents">
-                    <div className="cardWrappers">
+                <div className="whyChooseUsCardContentss">
+                    <div className="cardWrappers justify-between mt-4 ">
                         <ServicesCards
+                            imageUrl="/icons/coreValue-4.svg"
                             heading="Innovation"
                             description="Think smart, Act fast."
                         />
                         <ServicesCards
+                            imageUrl="/icons/coreValue-3.svg"
+
                             heading="Effectiveness"
                             description="Make it work, Make it count."
                         />
                         <ServicesCards
+                            imageUrl="/icons/coreValue-2.svg"
+
                             heading="Collaboration"
                             description="Together, we grow."
                         />
                         <ServicesCards
+                            imageUrl="/icons/coreValue-1.svg"
+
                             heading="Integrity"
                             description="We do what's right."
                         />

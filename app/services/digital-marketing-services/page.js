@@ -12,7 +12,7 @@ import WhyChooseUs2 from '@/components/WhyChooseUs2';
 export default function DigitalMarketingServices() {
     return (
         <div>
-            <Breadcrumb />
+            {/* <Breadcrumb /> */}
             <div className='servicePageWrapper'>
                 <div className='sideBarWrapper'>
                     <SideBar />

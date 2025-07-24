@@ -3,6 +3,11 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../../.flowbite-react/class-list.json";
 
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 .background-image {
   background-image: url("/images/bg.webp");
 }
@@ -884,7 +889,7 @@ nav.breadCrumbWrapper {
   overflow: auto;
   position: -webkit-sticky;
   position: sticky;
-  top: 5%;
+  top: 10%;
 }
 
 .serviceContentWrapper {

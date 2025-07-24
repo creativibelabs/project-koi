@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function AiPoweredSolutions() {
     return (
         <div>
-            <Breadcrumb />
+            {/* <Breadcrumb /> */}
             <div className='servicePageWrapper'>
                 <div className='sideBarWrapper'>
                     <SideBar />
