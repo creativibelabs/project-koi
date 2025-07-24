@@ -8,7 +8,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <>
-      <div className="hero-section pt-36">
+      <div className="hero-section">
         <div className="content-section gradient-background">
           <h1>IT Solutions Tailored to Your Business</h1>
           <p>From day-to-day support to long term strategy, we deliver cost efficient, flexible IT services designed to match your goals and specific way of working</p>
@@ -81,21 +81,21 @@ export default function Home() {
               imageUrl="/images/why-choose-1.png"
               link="#"
               title="End-to-End Expertise"
-              tags={['3D', 'AR/VR/MR', '2D']}
+              tags={[]}
               description="We off complete digital solutions – from strategy to launch – so you get everything under one roof."
             />
             <WhyChooseUsCard
               imageUrl="/images/why-choose-2.png"
               link="#"
               title="Performance-Focused Solutions"
-              tags={['3D', 'AR/VR/MR', '2D']}
+              tags={[]}
               description="We focus on measurable outcomes – we deliver solutions that drive real business value."
             />
             <WhyChooseUsCard
               imageUrl="/images/why-choose-3.png"
               link="#"
               title="Reliable Support & Partnership"
-              tags={['3D', 'AR/VR/MR', '2D']}
+              tags={[]}
               description="We don’t just delivery projects – we build long-term relationships with proactive support and honest communication."
             />
           </div>

@@ -24,7 +24,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`headerMainWrapper rounded-[10px] gradient-background fixed z-10 w-[100%] ${scrolled ? 'bg-transparent' : 'bg-white shadow-md'}`}>
+    <header className={`headerMainWrapper rounded-[0] gradient-background w-[100%] fixed z-10  ${scrolled ? 'bg-transparent' : 'custom-white shadow-md'}`}>
       <div className='headerWrapper'>
         <div className='logoWrapper'>
           <Link href='#'><Image src="/images/logo.png" width={100} height={10} alt="Logo" /></Link>

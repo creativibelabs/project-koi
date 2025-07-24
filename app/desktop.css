@@ -34,16 +34,12 @@ p {
   padding: 14px 16px 28px 16px;
 }
 .IndustriesWeServe img {
-  height: auto;
+  height: 48px;
 }
 .IndustriesWeServe li {
   min-width: auto;
   flex: 15%;
   transition: all 0.5s ease;
-}
-
-.IndustriesWeServe img {
-  height: auto;
 }
 
 .stContent p.content {
@@ -403,3 +399,15 @@ ul.parent::before {
   top: 450px;
   right: 10px;
 }
+
+.manageIT li {
+  border: 0 !important;
+  background-color: transparent !important;
+  text-align: left !important;
+  /* list-style: disc !important; */
+}
+/* .manageIT li :hover {
+  transform: scale(0) !important;
+} */
+
+

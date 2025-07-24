@@ -34,59 +34,65 @@ export default function managedItServices() {
                     <div className="industriesServeMainWrapper">
                         <div className="is-heading gradient-background"><h3>Service Highlight</h3></div>
                         <div className="isContent">
-                            <div className="itemsWrapper">
-                                <div className='is-heading gradient-background headingWrapper'>
-                                    <h3>Expert Guidance for Smarter IT Decisions</h3>
-                                </div>
-                                <div className='duoColumns'>
-                                    <div className='duoColumn1'>
+                            <div className="itemsWrapper manageIT">
+
+                                <div className='duoColumns gap-8'>
+                                    <div className='duoColumn1 border rounded-xl shadow-sm p-3'>
                                         <div className='contentWrapper'>
-                                            <h4>Key Features:</h4>
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="24/7 Monitoring & Support"
-                                                description="Our team proactively monitors your infrastructure to catch issues before they cause downtime. When something breaks, we’re just a call or clickaway"
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Endpoint Management"
-                                                description="We manage updates, patches, antivirus, and backups across every user device — ensuring your workforce stays protected and productive."
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Server & Network Administration"
-                                                description="From cloud servers to office networks, we ensure your systems run fast, stay secure, and scale smoothly as your business grows."
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Helpdesk Services"
-                                                description="Get fast, reliable support from real technicians — no phone trees or long waits. We resolve most user issues in minutes, not hours."
-                                            />
+                                            <div className='border rounded-xl shadow-sm p-3 font-bold mb-2.5'><h3>Stress-Free IT Support for Small and Midsize Teams</h3></div>
+                                            <div className='p-3'>
+                                                <h4 className='font-bold'>Key Features:</h4>
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="24/7 Monitoring & Support"
+                                                    description="Our team proactively monitors your infrastructure to catch issues before they cause downtime. When something breaks, we’re just a call or clickaway"
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Endpoint Management"
+                                                    description="We manage updates, patches, antivirus, and backups across every user device — ensuring your workforce stays protected and productive."
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Server & Network Administration"
+                                                    description="From cloud servers to office networks, we ensure your systems run fast, stay secure, and scale smoothly as your business grows."
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Helpdesk Services"
+                                                    description="Get fast, reliable support from real technicians — no phone trees or long waits. We resolve most user issues in minutes, not hours."
+                                                />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className='duoColumn2'>
+                                    <div class="lineglow"></div>
+                                    <div className='duoColumn2 border rounded-xl shadow-sm p-3'>
                                         <div className='contentWrapper'>
-                                            <h4>Key Features:</h4>
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Technology Strategy & Planning"
-                                                description="We align your IT infrastructure with your business goals — helping you plan smarter, budget better, and avoid tech debt."
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Infrastructure Audits"
-                                                description="Get a detailed view of what's working, what's not, and how to strengthen your systems for reliability and compliance."
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Vendor & Tool Selection"
-                                                description="From software platforms to cloud providers, we help you choose solutions that fit your business — and avoid the ones that don’t."
-                                            />
-                                            <FeatureHighlights
-                                                imageUrl=""
-                                                title="Cybersecurity Advisory"
-                                                description="Stay ahead of risks with expert assessments, compliance support (like HIPAA or ISO 27001), and actionable risk mitigation strategies."
-                                            />
+                                            <div className='border rounded-xl shadow-sm p-3 font-bold mb-2.5 '><h3>Expert Guidance for Smarter IT Decisions
+                                            </h3></div>
+                                            <div className='p-3'>
+                                                <h4 className='font-bold'>Key Features:</h4>
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Technology Strategy & Planning"
+                                                    description="We align your IT infrastructure with your business goals — helping you plan smarter, budget better, and avoid tech debt."
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Infrastructure Audits"
+                                                    description="Get a detailed view of what's working, what's not, and how to strengthen your systems for reliability and compliance."
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Vendor & Tool Selection"
+                                                    description="From software platforms to cloud providers, we help you choose solutions that fit your business — and avoid the ones that don’t."
+                                                />
+                                                <FeatureHighlights
+                                                    imageUrl=""
+                                                    title="Cybersecurity Advisory"
+                                                    description="Stay ahead of risks with expert assessments, compliance support (like HIPAA or ISO 27001), and actionable risk mitigation strategies."
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
