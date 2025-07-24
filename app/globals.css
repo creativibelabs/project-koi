@@ -8,8 +8,8 @@
 }
 
 :root {
-  --color-basic: #00ff38;
-  --color-second: #fff;
+  --color-basic: #0bec7c;
+  --color-second: #0bec7c22;
 }
 @theme inline {
   --color-background: var(--background);
@@ -1592,7 +1592,7 @@ p.location {
 .lineglow {
   position: relative;
   width: 10px;
-  height: 100vh;
+  height: 100%;
   background: #b1aeae;
 }
 .lineglow::before {
@@ -1629,44 +1629,44 @@ p.location {
 /* .lineglow::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0%;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: var(--color-basic);
   animation: animateDot 8s linear infinite;
-  transform: translateY(-100%) scale(0);
+  transform: translateY(0%) scale(0);
 } */
 
 @keyframes animateDot {
   0% {
-    transform: translateY(-50%) scale(0);
+    transform: translateY(-100%) scale(0);
   }
   5% {
-    transform: translateY(-50%) scale(1);
+    transform: translateY(-100%) scale(1);
   }
   15%,
   20% {
-    transform: translateY(-50%) scale(1);
+    transform: translateY(-100%) scale(1);
     box-shadow: 0 0 0 4px var(--color-second), 0 0 0 10px var(--color-second),
       0 0 20px var(--color-basic), 0 0 40px 5px var(--color-basic),
       0 0 60px 10px var(--color-basic);
   }
   40% {
-    transform: translateY(-50%) translateY(315px) scale(1);
+    transform: translateY(-100%) translateY(315px) scale(1);
   }
   80% {
-    transform: translateY(-50%) translateY(315px) scale(1);
+    transform: translateY(-100%) translateY(315px) scale(1);
     box-shadow: 0 0 0 4px var(--color-second), 0 0 0 10px var(--color-second),
       0 0 20px var(--color-basic), 0 0 40px 5px var(--color-basic),
       0 0 60px 10px var(--color-basic);
   }
   95% {
-    transform: translateY(-50%) translateY(315px) scale(1);
+    transform: translateY(-100%) translateY(315px) scale(1);
     box-shadow: none;
   }
   100% {
-    transform: translateY(-50%) translateY(315px) scale(0);
+    transform: translateY(-100%) translateY(315px) scale(0);
     box-shadow: none;
   }
 }

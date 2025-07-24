@@ -36,7 +36,7 @@ export default function managedItServices() {
                         <div className="isContent">
                             <div className="itemsWrapper manageIT">
 
-                                <div className='duoColumns gap-8'>
+                                <div className='duoColumns gap-3'>
                                     <div className='duoColumn1 border rounded-xl shadow-sm p-3'>
                                         <div className='contentWrapper'>
                                             <div className='border rounded-xl shadow-sm p-3 font-bold mb-2.5'><h3>Stress-Free IT Support for Small and Midsize Teams</h3></div>
