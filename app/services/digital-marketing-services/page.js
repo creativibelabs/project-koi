@@ -2,6 +2,7 @@
 
 import Breadcrumb from '@/components/Breadcrumb';
 import FeatureHighlights from '@/components/FeatureHighlights';
+import FeatureHighlights2 from '@/components/FeatureHighlights2';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -68,42 +69,42 @@ export default function DigitalMarketingServices() {
                                  <WhyChooseUs2 />
                             </div>
                             <div className="itemsWrapper">
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/adwords.png"
                                     title="Google Ads"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/meta.png"
                                     title="Meta Ads"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/hubspot.png"
                                     title="HubSpot"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/mailchimp.png"
                                     title="Mailchimp"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/semrush.png"
                                     title="SEMrush"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/google-analytics.png"
                                     title="GA4"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/linkedin.png"
                                     title="LinkedIn Ads"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/klaviyo.png"
                                     title="Klaviyo"
                                     description=""

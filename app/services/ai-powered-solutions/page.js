@@ -1,5 +1,6 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import FeatureHighlights from '@/components/FeatureHighlights';
+import FeatureHighlights2 from '@/components/FeatureHighlights2';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -86,38 +87,38 @@ export default function AiPoweredSolutions() {
                                 Whether you’re just starting with AI or ready to scale a solution, we design around your data, goals, and industry.
                             </p>
 
-                            <div className="itemsWrapper">
-                                <FeatureHighlights
+                            <div className="itemsWrapper justify-center">
+                                <FeatureHighlights2
                                     imageUrl="/icons/tensorflow.png"
                                     title="TensorFlow"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/pytorch.png"
                                     title="PyTorch"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/opencv.png"
                                     title="OpenCV"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/face.png"
                                     title="Hugging Face"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/aws.png"
                                     title="AWS SageMaker"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/vertex.png"
                                     title="Google Vertex AI"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/azure.png"
                                     title="Microsoft Azure AI"
                                     description=""

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import MainServicesCard from '@/components/services/MainServicesCard';
 import WhyChooseUsCard from '@/components/whyChooseUsCard';
-import FeatureHighlights from '@/components/FeatureHighlights';
+import FeatureHighlights2 from '@/components/FeatureHighlights2';
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Services() {
@@ -116,57 +116,57 @@ export default function Services() {
                 <div className="is-heading gradient-background"><h3>Tech Stack</h3></div>
                 <div className="isContent">
                     <div className="itemsWrapper">
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/react.png"
                             title="React"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/mongodb.svg"
                             title="MongoDB"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/nodejs.png"
                             title="Node.js"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/postgresql.png"
                             title="MySQL"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/net.png"
                             title=".NET"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/aws.png"
                             title="AWS"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/azure.png"
                             title="Azure"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/firebase.svg"
                             title="Firebase"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/python.png"
                             title="Python"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/tensorflow.png"
                             title="TensorFlow"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/c++.png"
                             title="C++"
                             description=""

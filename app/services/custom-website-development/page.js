@@ -1,5 +1,6 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import FeatureHighlights from '@/components/FeatureHighlights';
+import FeatureHighlights2 from '@/components/FeatureHighlights2';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -91,42 +92,42 @@ export default function CustomWebsiteDevelopment() {
                         <div className="is-heading gradient-background"><h3>CMS & Technology Options</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/wordpress.png"
                                     title="WordPress"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/webflow.png"
                                     title="Webflow"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/sanity.png"
                                     title="Sanity"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/strapi.png"
                                     title="Strapi"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/contentful.png"
                                     title="Contentful"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/jamstack.png"
                                     title="Jamstack"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/shopify.png"
                                     title="Shopify"
                                     description=""
                                 />
-                                <FeatureHighlights
+                                <FeatureHighlights2
                                     imageUrl="/icons/nextjs.png"
                                     title="Next.js"
                                     description=""

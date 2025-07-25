@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FeatureHighlights from '@/components/FeatureHighlights';
+import FeatureHighlights2 from '@/components/FeatureHighlights2';
 
 export default function CloudMigration() {
     return (
@@ -12,7 +13,7 @@ export default function CloudMigration() {
                         <p>
                             We help businesses move to the cloud with confidence – minimizing disruption while maximizing long-term value.
                         </p>
-                        <Image src="/images/cloud-image1.png" width={6000} height={6000} alt="cloud image"/>
+                        <Image src="/images/cloud-image1.png" width={6000} height={6000} alt="cloud image" />
                     </div>
                 </div>
             </div>
@@ -90,32 +91,32 @@ export default function CloudMigration() {
                         </ul>
                     </div>
                     <div className="itemsWrapper">
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/aws.png"
                             title="AWS"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/azure.png"
                             title="Azure"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/google-cloud.png"
                             title="Google Cloud"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/ibm-cloud.png"
                             title="IBM Cloud"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/vmware.png"
                             title="VMware"
                             description=""
                         />
-                        <FeatureHighlights
+                        <FeatureHighlights2
                             imageUrl="/icons/wheel.png"
                             title="Kubernetes"
                             description=""
