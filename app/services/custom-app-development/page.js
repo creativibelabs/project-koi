@@ -1,5 +1,5 @@
 import Breadcrumb from '@/components/Breadcrumb';
-import FeatureHighlights2 from '@/components/FeatureHighlights2';
+import FeatureHighlights from '@/components/FeatureHighlights';
 import SideBar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -35,22 +35,22 @@ export default function CustomAppDevelopment() {
                         <div className="is-heading gradient-background"><h3>Feature Highlights</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper">
-                                <FeatureHighlights2 
+                                <FeatureHighlights 
                                     imageUrl="/icons/cross-platform.png"
                                     title="Cross-Platform Development"
                                     description="Build once, deploy everywhere. We create responsive, consistent experiences across iOS, Android, and the web using modern frameworks like Flutter and React Native."
                                 />
-                                <FeatureHighlights2 
+                                <FeatureHighlights 
                                     imageUrl="/icons/backend.png"
                                     title="Scalable Backend Architecture"
                                     description="From custom APIs to secure database structures, we develop reliable backend systems built to grow with your user base and data demands."
                                 />
-                                <FeatureHighlights2 
+                                <FeatureHighlights 
                                     imageUrl="/icons/ui-ux.png"
                                     title="UX/UI Design That Converts"
                                     description="Our design-first approach puts users at the center—ensuring every tap, swipe, and click is intuitive, beautiful, and goal-driven."
                                 />
-                                <FeatureHighlights2 
+                                <FeatureHighlights 
                                     imageUrl="/icons/integration.png"
                                     title="Seamless Integration"
                                     description="We connect your apps with CRMs, ERPs, payment systems, cloud services, and more for a connected experience that doesn’t disrupt your existing workflow."

@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@source "../.flowbite-react/class-list.json";
-@plugin "flowbite-react/plugin/tailwindcss";
-@source "../../.flowbite-react/class-list.json";
 
 /* * {
   margin: 0;
@@ -1674,4 +1671,11 @@ p.location {
     transform: translateY(-100%) translateY(315px) scale(0);
     box-shadow: none;
   }
+}
+
+
+.customStickyHeader {
+  /* background-color: white !important; */
+  backdrop-filter: blur(15px);
+  background-color: rgb(0 0 0 / 42%) !important;
 }

@@ -1,8 +1,7 @@
 import { Public_Sans } from 'next/font/google';
 import "./globals.css";
 import "./desktop.css";
-import "./responsive.css";
-import { ThemeModeScript } from 'flowbite-react';
+import "./responsive.css";  
 import RipplesBackground from '@/components/RipplesBackground';
 import ChatWrapper from "@/components/ChatWrapper";
 import Header from "@/components/Header";
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <ThemeModeScript />
       </head>
       <body className={publicSans.variable}>
         <div id="root">
@@ -38,10 +36,9 @@ export default function RootLayout({ children }) {
               overflowY: 'auto',
               position: 'static',
             }}>
-            <RipplesBackground />
+            {/* <RipplesBackground /> */}
             <Header />
             <div className="content-wrapper">{children}</div>
-            {/* <ChatWrapper /> */}
             <Footer />
           </div>
         </div>
