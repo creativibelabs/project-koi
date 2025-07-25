@@ -18,7 +18,7 @@ export default function CloudStorage() {
                             <br />
                             Storage Providers:
                         </p>
-                        <ul>
+                        <ul className='justify-center'>
                             <li>Amazon S3</li>
                             <li>Azure Blob Storage</li>
                             <li>Google Cloud Storage</li>
