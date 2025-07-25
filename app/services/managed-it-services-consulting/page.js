@@ -7,8 +7,22 @@ import Link from 'next/link';
 
 export default function managedItServices() {
     const quotes = [
-        'We\'ve seen a 90% drop in support tickets and can finally focus on growing our business, not fixing tech issues. — Operations Manager, Mid-size Manufacturing Firm.',
-        'They helped us clean up a mess of systems and migrate to a secure, scalable cloud setup with no downtime. — CEO, Professional Services Firm.',
+        {
+            name: "Ayesha Khan",
+            review: "Working here has been an incredible journey — the team is supportive, and every project pushes me to grow.",
+            designation: "Frontend Developer"
+        },
+        {
+            name: "Usman Raza",
+            review: "I love how we prioritize creativity and collaboration. It\'s more than a job — it feels like a shared mission.",
+            designation: " UX Designer",
+        },
+        {
+            name: "Fatima Ali",
+            review: "Every day brings a new challenge, and that\'s exactly what keeps me motivated.The energy here is unmatched.",
+            designation: "Project Manager",
+
+        }
     ];
     return (
         <div>
