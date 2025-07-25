@@ -33,7 +33,7 @@ export default function CustomAppDevelopment() {
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight">
                         <div className="is-heading gradient-background"><h3>Feature Highlights</h3></div>
-                        <div className="">
+                        <div className="isContent">
                             <div className="itemsWrapper">
                                 <FeatureHighlights 
                                     imageUrl="/icons/cross-platform.png"

@@ -9,7 +9,7 @@ export default function ContactPage() {
     return(
         <>
             <div className="hero-section contact">
-                <div className="content-section-contact gradient-background">
+                <div className="content-section-contact  gradient-background">
                     <h1>Company Information</h1>
                     <div className="companyInfo">
                         <p><b>Company Name: </b>CreatiVibe Labs</p>
@@ -24,7 +24,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-                <div className="image-section">
+                <div className="image-section border-[1px] border-amber-50 rounded-2xl p-4">
                     <iframe
                         width="100%"
                         height="441"

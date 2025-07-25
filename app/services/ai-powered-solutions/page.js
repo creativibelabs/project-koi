@@ -55,7 +55,7 @@ export default function AiPoweredSolutions() {
                                     description="We create intelligent systems that act on real-time data — automating repetitive workflows, surfacing insights, and reducing human error."
                                 />
                             </div>
-                            <p className='subHeadings'>Industry-Specific Use Cases</p>
+                            <p className='subHeadings pt-5'>Industry-Specific Use Cases</p>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl=""

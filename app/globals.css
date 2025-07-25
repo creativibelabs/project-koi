@@ -293,7 +293,7 @@ p.wcu-heading .heading-2 {
   backdrop-filter: blur(15px);
   border-radius: 16px;
   border: 1px solid #ffffff66;
-  padding: 14px 16px;
+  padding: 20px;
   margin-top: 2%;
 }
 
@@ -673,7 +673,7 @@ a {
   backdrop-filter: blur(15px);
   opacity: 0;
   visibility: hidden;
-  background-color: #191616d6;
+  background-color: #191616d6 !important;
   border-radius: 10px;
 }
 
@@ -927,10 +927,18 @@ a.sidebar-menu.active {
   margin-top: 20px;
 }
 
-.featuresHighlight .isContent {
+/* .featuresHighlight .isContent {
   padding-top: 0;
+} */
+.featuresHighlight .service-card-wrap:first-child,
+.featuresHighlight .service-card-wrap:nth-child(2) {
+  margin-top: 0;
 }
 
+.cmsWork .service-card-wrap:first-child,
+.cmsWork .service-card-wrap:nth-child(2) {
+  margin-top: 2% !important;
+}
 .featuresHighlight .service-card-wrap {
   width: 49%;
   margin-top: 2%;
@@ -1203,7 +1211,7 @@ a.sidebar-menu.active {
 
 p.subHeadings {
   font-size: 18px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .industriesServeMainWrapper.ai-cta.letsBuildToghether.featuresHighlight.cmsWork
@@ -1317,7 +1325,7 @@ p.subHeadings {
 
 .cmsWork2 .service-card-wrap {
   padding-top: 0;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   width: 15%;
 }
 
@@ -1674,4 +1682,19 @@ p.location {
   /* background-color: white !important; */
   backdrop-filter: blur(15px);
   background-color: rgb(0 0 0 / 42%) !important;
+}
+
+.serviceWhy {
+  border: 0 !important;
+  backdrop-filter: unset !important;
+}
+
+.ServiceHighlight .service-card-wrap {
+  padding: 0;
+  border-bottom: 1px dashed #fff;
+  border-radius: 0;
+}
+
+.ServiceHighlight .service-card-wrap:last-child {
+  border: 0;
 }

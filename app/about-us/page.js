@@ -31,7 +31,19 @@ export default function AboutUs() {
 
     return (
         <>
-            <div className="hero-section-about pt-36">
+            <div className="hero-section">
+                <div className="content-section border-[1px] border-[#ffffff66] gradient-background">
+                    <h1>Who We Are</h1>
+                    <p>Driven by innovation. United by purpose</p>
+                    <div className="buttons-wrapper">
+                        <Link href="#">Meet the Team</Link>
+                    </div>
+                </div>
+                <div className="image-section">
+                    <Image src='/images/hero-image.png' width={516} height={444} alt="Hero Image"></Image>
+                </div>
+            </div>
+            {/* <div className="hero-section-about pt-36">
                 <div className="content-section-about">
                     <div className="content-wrapper-about">
                         <h1 className="main-heading">Who We Are</h1>
@@ -41,7 +53,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="whyCHooseUsWrapper coreValues">
                 <div className="whyChooseUsHeading gradient-background"><h2>Core Values</h2></div>

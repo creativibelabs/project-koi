@@ -107,7 +107,7 @@ export default function Services() {
                         />
                     </div>
                 </div> */}
-                <div className="whyChooseUsCardContents items-center justify-center">
+                <div className="whyChooseUsCardContents items-center justify-center relative serviceWhy">
                     <WhyChooseUs />
                 </div>
             </div>
