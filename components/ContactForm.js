@@ -43,7 +43,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">
-      
+
       {/* Company */}
       <div className="relative">
         <input
@@ -105,11 +105,11 @@ export default function ContactForm() {
           onChange={handleChange}
           className={` input-field ${errors.subject ? 'error' : ''}`}
         >
-          <option value="" disabled defaultValue>Subject</option>
-          <option value="General inquiry">General inquiry</option>
-          <option value="Request a quotation">Request a quotation</option>
-          <option value="Book a consultation">Book a consultation</option>
-          <option value="Others">Others</option>
+          <option className='text-black' value="" disabled defaultValue>Subject</option>
+          <option className='text-black' value="General inquiry">General inquiry</option>
+          <option className='text-black' value="Request a quotation">Request a quotation</option>
+          <option className='text-black' value="Book a consultation">Book a consultation</option>
+          <option className='text-black' value="Others">Others</option>
         </select>
         {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
       </div>
