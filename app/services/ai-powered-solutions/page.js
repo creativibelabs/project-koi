@@ -29,10 +29,10 @@ export default function AiPoweredSolutions() {
                             </div>
                         </div>
                     </div>
-                    <div className="industriesServeMainWrapper featuresHighlight">
+                    <div className="industriesServeMainWrapper featuresHighlight featuresHighlight2">
                         <div className="is-heading gradient-background"><h3>Feature Hightlights</h3></div>
                         <div className="isContent">
-                            <p className='subHeadings'><b>What We Deliver</b></p>
+                            <p className='subHeadings'>What We Deliver</p>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl=""
@@ -55,7 +55,7 @@ export default function AiPoweredSolutions() {
                                     description="We create intelligent systems that act on real-time data — automating repetitive workflows, surfacing insights, and reducing human error."
                                 />
                             </div>
-                            <p className='subHeadings'><b>Industry-Specific Use Cases</b></p>
+                            <p className='subHeadings'>Industry-Specific Use Cases</p>
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl=""

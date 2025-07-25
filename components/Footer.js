@@ -8,7 +8,7 @@ import { footerLinks2 } from '@/constant/constants';
 
 export default function Footer() {
     return (
-        <div className='footer left-gradient-background'>
+        <div className='footer border-t-[1px] border-b-[#ffffff66] left-gradient-background'>
             <div className='footerWrapper'>
                 <div className='section1'>
                     <div className='logoWrapper'>
@@ -54,13 +54,13 @@ export default function Footer() {
                     <div className='socialIconsWrapper gap-8'>
                         <p>Follow <span className='neon-green'>Us</span></p>
                         <div className='icons'>
-                            <Link href="#">      
-                                <Image src="/icons/fb.png" width={33} height={33} alt='fb icon' />    
+                            <Link href="#">
+                                <Image src="/icons/fb.png" width={33} height={33} alt='fb icon' />
                             </Link>
-                            <Link href="#">          
+                            <Link href="#">
                                 <Image src="/icons/insta.png" width={33} height={33} alt='insta icon' />
                             </Link>
-                            <Link href="#">  
+                            <Link href="#">
                                 <Image src="/icons/twitter.png" width={33} height={33} alt='twitter icon' />
                             </Link>
                         </div>

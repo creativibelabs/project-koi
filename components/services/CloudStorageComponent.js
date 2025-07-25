@@ -46,7 +46,7 @@ export default function CloudStorage() {
 
             <div className="industriesServeMainWrapper featuresHighlight">
                 <div className="is-heading gradient-background"><h3>Key Features</h3></div>
-                <div className="isContent">
+                <div className="">
                     <div className="itemsWrapper">
                         <FeatureHighlights
                             imageUrl="/icons/hot.png"

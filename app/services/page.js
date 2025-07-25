@@ -78,7 +78,7 @@ export default function Services() {
             </div>
 
             <div className="whyCHooseUsWrapper">
-                <div className="whyChooseUsHeading gradient-background"><h2>Why Choose Us?</h2></div>
+                <div className="whyChooseUsHeading gradient-background"><h2>How Its Work?</h2></div>
                 {/* <div className="whyChooseUsCardContents">
                     <p className="wcu-heading">
                         <span className="heading-1 block mb-2">Smart IT Solutions with Real Business Benefits</span>
@@ -114,7 +114,7 @@ export default function Services() {
 
             <div className="industriesServeMainWrapper featuresHighlight cmsWork cmsWork2">
                 <div className="is-heading gradient-background"><h3>Tech Stack</h3></div>
-                <div className="isContent">
+                <div className="">
                     <div className="itemsWrapper">
                         <FeatureHighlights2
                             imageUrl="/icons/react.png"

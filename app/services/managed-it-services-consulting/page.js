@@ -49,7 +49,6 @@ export default function managedItServices() {
                         <div className="is-heading gradient-background "><h3>Service Highlight</h3></div>
                         <div className="isContent">
                             <div className="itemsWrapper manageIT ServiceHighlight">
-
                                 <div className='duoColumns gap-3'>
                                     <div className='duoColumn1 border rounded-xl shadow-sm p-3'>
                                         <div className='contentWrapper'>

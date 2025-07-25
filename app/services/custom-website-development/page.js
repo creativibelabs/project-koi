@@ -36,7 +36,7 @@ export default function CustomWebsiteDevelopment() {
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight">
                         <div className="is-heading gradient-background"><h3>What Sets Our Websites Apart</h3></div>
-                        <div className="isContent">
+                        <div className="">
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl="/icons/search-engine.png"
@@ -63,7 +63,7 @@ export default function CustomWebsiteDevelopment() {
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight">
                         <div className="is-heading gradient-background"><h3>Types of Websites We Build</h3></div>
-                        <div className="isContent">
+                        <div className="">
                             <div className="itemsWrapper">
                                 <FeatureHighlights
                                     imageUrl="/icons/bullhorn.png"
@@ -90,7 +90,7 @@ export default function CustomWebsiteDevelopment() {
                     </div>
                     <div className="industriesServeMainWrapper featuresHighlight cmsWork">
                         <div className="is-heading gradient-background"><h3>CMS & Technology Options</h3></div>
-                        <div className="isContent">
+                        <div className="">
                             <div className="itemsWrapper">
                                 <FeatureHighlights2
                                     imageUrl="/icons/wordpress.png"
