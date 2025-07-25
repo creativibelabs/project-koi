@@ -1,0 +1,416 @@
+p {
+  font-weight: 300;
+}
+
+.content-section {
+  padding: 20px 20px 40px 20px;
+}
+
+.image-button-wrap a {
+  width: 100%;
+  justify-content: center;
+}
+
+.ServicesCardsContent img {
+  width: 160px;
+}
+
+.image-button-wrap {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ServicesCardsContent .heading {
+  font-size: 22px;
+}
+
+.ServicesCardsHeading,
+.whyChooseUsHeading,
+.industriesServeMainWrapper .is-heading {
+  padding: 5px 18px 10px 18px;
+}
+
+.industriesServeMainWrapper .isContent {
+  padding: 14px 16px 28px 16px;
+}
+.IndustriesWeServe img {
+  height: 48px;
+}
+.IndustriesWeServe li {
+  min-width: auto;
+  flex: 15%;
+  transition: all 0.5s ease;
+}
+
+.stContent p.content {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 33px;
+  width: auto;
+}
+
+.stContent {
+  padding: 20px 20px 30px 20px;
+}
+
+.content-section p {
+  font-weight: 300;
+}
+
+.site_readmore {
+  font-weight: 600;
+  color: #c3f8d9;
+  display: inline-flex;
+  transition: all 0.5s ease;
+}
+
+.site_readmore:hover {
+  color: #39ff14;
+}
+
+.site_readmore svg {
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  overflow: visible;
+  transition: all 0.5s ease;
+}
+
+.buttons-wrapper a,
+.button {
+  transition: all 0.5s ease;
+}
+
+.buttons-wrapper a:hover,
+.button:hover {
+  background-color: #c3f8d9;
+  color: #333;
+}
+
+.site_readmore svg ellipse {
+  transition: all 0.5s ease;
+}
+
+.site_readmore:hover svg ellipse {
+  fill: #39ff14;
+}
+
+.whyChooseUsHeading h2,
+.is-heading h2,
+.ServicesCardsHeading h2,
+.StillThinkingMainWrapper h2 {
+  color: #c3f8d9;
+}
+
+.mobileLinks a {
+  padding-left: 30px;
+  position: relative;
+}
+
+.mobileMenuWrapper .mobileLinks a::before {
+  content: "";
+  font-size: inherit;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="%2339ff14" d="M8 3a5 5 0 100 10A5 5 0 008 3z"/></svg>');
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+/* Organization Struture */
+
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* .org-chart ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #aaa;
+  height: 20px;
+} */
+
+.org-chart li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 5px;
+  position: relative;
+}
+
+/* .org-chart li::before,
+.org-chart li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #aaa;
+  width: 50%;
+  height: 20px;
+} */
+
+/* .org-chart li::before {
+  left: -50%;
+  border-right: 2px solid #aaa;
+}
+
+.org-chart li::after {
+  right: -50%;
+  border-left: 2px solid #aaa;
+} */
+
+.org-chart li:only-child::before,
+.org-chart li:only-child::after {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+/* .org-chart li:first-child::before,
+.org-chart li:last-child::after {
+  border: 0 none;
+} */
+
+/* .org-chart li:last-child::before {
+  border-right: 2px solid #aaa;
+  border-radius: 0 5px 0 0;
+}
+
+.org-chart li:first-child::after {
+  border-left: 2px solid #aaa;
+  border-radius: 5px 0 0 0;
+} */
+
+.box {
+  background: linear-gradient(
+      0deg,
+      rgba(25, 66, 48, 0.5),
+      rgba(25, 66, 48, 0.5)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(153, 153, 153, 0.15) 100%
+    );
+  padding: 10px 1rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  position: relative;
+  border: 1px solid #fff;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #3cb184;
+  max-width: 148px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure level-2 nodes (CTO, COO, CFO) are in one line */
+.org-chart .level-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* optional spacing between them */
+  padding-top: 76px;
+  margin-left: -33px;
+}
+
+/* Optional: prevent child <li> from breaking */
+.org-chart .level-2 > li {
+  flex-shrink: 0;
+}
+.org-chart li p:nth-child(1) {
+  font-weight: 800;
+  background: linear-gradient(
+      0deg,
+      rgba(25, 66, 48, 0.5),
+      rgba(25, 66, 48, 0.5)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(153, 153, 153, 0.15) 100%
+    );
+
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 65px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.org-chart li p:nth-child(2),
+ul.parent::before {
+  display: none;
+}
+
+.box.top.text-3xl::before {
+  position: absolute;
+  content: "";
+  background-image: url("/icons/downArrow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -32px;
+  width: 100%;
+  height: 32px;
+  z-index: -9;
+}
+.box.text-\[28px\]::before {
+  position: absolute;
+  content: "";
+  background-image: url(/icons/long-dwn-arrow.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: -74px;
+  height: 100%;
+  z-index: -9;
+  width: 720px;
+}
+.box.text-\[28px\] {
+  margin-top: 20px;
+}
+.text-2xl.box {
+  margin-bottom: 30px;
+}
+.text-2xl.box::before {
+  position: absolute;
+  content: "";
+  background-image: url(/icons/short-dwn-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: -55px;
+  height: 100%;
+  z-index: -9;
+  width: 115%;
+  background-size: contain;
+}
+
+.box.text-\[16px\]:last-child::before {
+  position: absolute;
+  content: "";
+  background-image: url("/icons/downArrow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -54px;
+  width: 100%;
+  height: 32px;
+  z-index: -9;
+}
+
+.box.text-\[16px\]:last-child {
+  margin-top: 22px;
+}
+/* why choose us */
+.step {
+  position: absolute;
+  padding: 1rem 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -99;
+  width: 400px;
+  height: 120px;
+}
+
+.step h6 {
+  color: #39ff14;
+  font-size: 22px;
+  font-weight: bold;
+}
+.step p {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.step-1 {
+  text-align: end;
+  background-image: url("/images/step1.svg");
+  top: 24px;
+  right: 105px;
+  padding: 1rem 4rem;
+}
+
+.step-2 {
+  text-align: end;
+  background-image: url("/images/step2.svg");
+  top: 245px;
+  right: 50px;
+}
+
+.step-3 {
+  text-align: end;
+  background-image: url("/images/step3.svg");
+  top: 460px;
+  right: 85px;
+}
+
+.step-4 {
+  background-image: url("/images/step4.svg");
+  top: 465px;
+  left: 90px;
+}
+.step-5 {
+  top: 245px;
+  left: 60px;
+  background-image: url("/images/step5.svg");
+}
+.step-6 {
+  top: 23px;
+  left: 100px;
+  background-image: url("/images/step6.svg");
+}
+
+/* Service-Digital Page */
+.pieChart .step-1 {
+  top: 75px;
+  right: 35px;
+}
+
+.pieChart .step-6 {
+  top: 75px;
+  left: 35px;
+}
+
+.pieChart .step-4 {
+  left: 15px;
+  top: 450px;
+}
+
+.pieChart .step-3 {
+  top: 450px;
+  right: 10px;
+}
+
+.manageIT li {
+  border: 0 !important;
+  background-color: transparent !important;
+  text-align: left !important;
+  /* list-style: disc !important; */
+}
+/* .manageIT li :hover {
+  transform: scale(0) !important;
+} */
+
+
+.manageIT p{
+  text-align: left !important;
+}
