@@ -35,7 +35,7 @@ export default function AboutUs() {
                 <div className="content-section border-[1px] border-[#ffffff66] gradient-background">
                     <h1>Who We Are</h1>
                     <p>Driven by innovation. United by purpose</p>
-                    <div className="buttons-wrapper">
+                    <div className="buttons-wrapper w-3xs">
                         <Link href="#">Meet the Team</Link>
                     </div>
                 </div>
