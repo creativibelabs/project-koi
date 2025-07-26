@@ -1640,6 +1640,7 @@ p.location {
 }
 
 
+
 @keyframes animateDot {
   0% {
     top: 0%;
@@ -1660,24 +1661,29 @@ p.location {
     top: 100%;
     transform: scale(1);
   }
-  80% {
+  60% {
     top: 100%;
+    transform: scale(1);
+  }
+  80% {
+    top: 0%;
     transform: scale(1);
     box-shadow: 0 0 0 4px var(--color-second), 0 0 0 10px var(--color-second),
       0 0 20px var(--color-basic), 0 0 40px 5px var(--color-basic),
       0 0 60px 10px var(--color-basic);
   }
   95% {
-    top: 100%;
+    top: 0%;
     transform: scale(1);
     box-shadow: none;
   }
   100% {
-    top: 100%;
+    top: 0%;
     transform: scale(0);
     box-shadow: none;
   }
 }
+
 
 
 

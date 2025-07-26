@@ -46,7 +46,7 @@ export default function ContactPage({ imageUrl, title, text }) {
                     <div className="border-[1px] border-amber-50 rounded-2xl p-4 backdrop-blur-lg gap-5 flex flex-col">
                         {/* Contact Information */}
                         <div className="p-5  border-[1px] border-amber-50 rounded-2xl backdrop-blur-lg bg-[linear-gradient(0deg,rgba(25,66,48,0.5),rgba(25,66,48,0.5)),linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(153,153,153,0.06)_100%)]">
-                            <h2 className="text-[#98C1A9] text-lg font-bold">Company Information</h2>
+                            {/* <h2 className="text-[#98C1A9] text-lg font-bold">Company Information</h2> */}
                             <div className="flex justify-between items-center gap-5 my-5">
                                 <div className="flex justify-start w-full gap-2 p-2 items-center border-[1px] border-amber-50 rounded-2xl">
                                     <div>
