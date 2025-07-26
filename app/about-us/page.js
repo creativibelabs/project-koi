@@ -31,18 +31,20 @@ export default function AboutUs() {
 
     return (
         <>
-            <div className="hero-section">
-                <div className="content-section border-[1px] border-[#ffffff66] gradient-background">
-                    <h1>Who We Are</h1>
+            <div className="service-hero-section bg-abt-none flex justify-between items-center">
+                <div className="w-[50%]">
+                    <h1 className="text-[#c3f8d9] font-bold ">Who We Are</h1>
                     <p>Driven by innovation. United by purpose</p>
                     <div className="buttons-wrapper w-3xs">
                         <Link href="#">Meet the Team</Link>
                     </div>
                 </div>
-                <div className="image-section">
-                    <Image src='/images/about-bg.png' width={516} height={500} alt="Hero Image"></Image>
+                <div className="w-[50%] text-end">
+                    <Image src='/images/about-bg.png' width={800} height={500} alt="Hero Image"></Image>
                 </div>
             </div>
+
+
             {/* <div className="hero-section-about pt-36">
                 <div className="content-section-about">
                     <div className="content-wrapper-about">
