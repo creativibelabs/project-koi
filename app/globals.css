@@ -1610,7 +1610,7 @@ p.location {
   width: 100%;
   height: 100%;
   background: var(--color-basic);
-  animation: animate 8s linear infinite;
+  animation: animate 30s linear infinite;
   transform-origin: top;
 }
 
@@ -1635,7 +1635,7 @@ p.location {
   height: 10px;
   border-radius: 50%;
   background: var(--color-basic);
-  animation: animateDot 8s linear infinite;
+  animation: animateDot 30s linear infinite;
   transform: scale(0);
 }
 
