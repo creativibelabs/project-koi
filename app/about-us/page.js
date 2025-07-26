@@ -40,7 +40,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="image-section">
-                    <Image src='/images/hero-image.png' width={516} height={444} alt="Hero Image"></Image>
+                    <Image src='/images/about-bg.png' width={516} height={500} alt="Hero Image"></Image>
                 </div>
             </div>
             {/* <div className="hero-section-about pt-36">
