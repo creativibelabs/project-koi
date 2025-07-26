@@ -764,7 +764,7 @@ a {
 }
 
 .contactForm {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 30px;
 }
 
@@ -773,7 +773,7 @@ form.contact-form {
   flex-direction: column;
   gap: 20px;
   align-items: stretch;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-form .input-field {
@@ -785,6 +785,8 @@ form.contact-form {
   font-weight: 500;
   outline: none;
   resize: none;
+  margin-top: 0.5rem;
+
 }
 
 .contact-form .input-field.error {
@@ -1633,7 +1635,7 @@ p.location {
   }
 }
 
-/* .lineglow::after {
+.lineglow::after {
   content: "";
   position: absolute;
   top: 0%;
@@ -1643,7 +1645,7 @@ p.location {
   background: var(--color-basic);
   animation: animateDot 8s linear infinite;
   transform: translateY(0%) scale(0);
-} */
+}
 
 @keyframes animateDot {
   0% {
