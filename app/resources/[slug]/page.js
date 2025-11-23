@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { cookies } from "next/headers";
 import { getBlogBySlug } from "@/constant/ContentApi";
+import "./blog-content.css";
 
 // Ensure the page always renders per-request so language changes via cookie apply instantly
 export const dynamic = "force-dynamic";
@@ -141,11 +142,11 @@ export default async function ResourceArticlePage({ params, searchParams }) {
           body.trim().startsWith("<") ? (
             // If API returns HTML, render it directly
             <article
-              className="mt-8 prose prose-invert max-w-none text-white"
+              className="mt-8 prose prose-invert max-w-none text-white blog-content"
               dangerouslySetInnerHTML={{ __html: body }}
             />
           ) : (
-            <article className="mt-8 space-y-6 text-base sm:text-lg leading-relaxed text-white">
+            <article className="mt-8 space-y-6 text-base sm:text-lg leading-relaxed text-white blog-content">
               {body
                 .split(/\n\n+/)
                 .filter(Boolean)
@@ -155,7 +156,7 @@ export default async function ResourceArticlePage({ params, searchParams }) {
             </article>
           )
         ) : (
-          <article className="mt-8 text-base sm:text-lg leading-relaxed text-white">
+          <article className="mt-8 text-base sm:text-lg leading-relaxed text-white blog-content">
             {/* If API returns structured blocks later, render accordingly */}
           </article>
         )}

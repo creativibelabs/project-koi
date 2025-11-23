@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import parse from 'html-react-parser';
 
 const NewsArticles = ({ blogData, lang, resources }) => {
   const [articlesData] = useState(blogData?.data || []);
@@ -163,7 +164,8 @@ const NewsArticles = ({ blogData, lang, resources }) => {
                         {article[`title_${lang}`] || article.title_en}
                       </h3>
                       <p className="text-[12px] xxs:text-[12.5px] xs:text-[13px] md:text-[14px] lg:text-[15px] text-white font-medium leading-relaxed line-clamp-2">
-                        {article[`content_${lang}`] || article.content_en}
+                        {parse(article[`content_${lang}`] || article.content_en)}
+
                       </p>
                     </div>
                   </div>

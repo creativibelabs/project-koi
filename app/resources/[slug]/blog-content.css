@@ -1,0 +1,102 @@
+/* Blog Content Styles - Typography Hierarchy */
+
+.blog-content h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.blog-content h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.blog-content ul,
+.blog-content ol {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content strong,
+.blog-content b {
+  font-weight: 600;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 640px) {
+  .blog-content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .blog-content h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  
+  .blog-content p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+  
+  .blog-content ul,
+  .blog-content ol {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+}
